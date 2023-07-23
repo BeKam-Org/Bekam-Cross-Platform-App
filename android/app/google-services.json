@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "994795731395",
+    "project_id": "bekam-2d852",
+    "storage_bucket": "bekam-2d852.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994795731395:android:012098f058989d7371a576",
+        "android_client_info": {
+          "package_name": "com.example.bekam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994795731395-tmjng0g4icvpvnis362jkifkqgp4od6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv1q9RbhX01A9DSvNU5c4L2-X0_br4JaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994795731395-tmjng0g4icvpvnis362jkifkqgp4od6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,6 +14,8 @@ class GlobalAppSizes {
   static const double s_5 = 5.0;
   static const double s_6 = 6.0;
 
+  static const double s_10 = 10.0;
+  static const double s_12 = 12.0;
   static const double s_20 = 20.0;
   static const double s_30 = 30.0;
   static const double s_40 = 40.0;
