@@ -24,4 +24,10 @@ mixin GlobalAppStrings {
       'We always can help you to stay \n connected to your oun home';
   static const String codeSentMessage =
       "Code sent successfully please check your email";
+
+  static const String aboutUs = 'About Us';
+  static const String contactWithTS = 'Contact with TS';
+  static const String shareApp = 'Share App';
+
+  static const String appHintCircleText = "Animated Login-Flutter";
 }

@@ -1,4 +1,6 @@
 import 'package:bekam/data/cubit/on_boarding_cubit.dart';
+import 'package:bekam/presentation/screens/landing_page.dart';
+import 'package:bekam/presentation/screens/registeration/forget_pass.dart';
 import 'package:bekam/presentation/widgets/onboarding/smooth_indicator/effects/expanding_dots_effect.dart';
 import 'package:bekam/presentation/widgets/onboarding/smooth_indicator/smooth_page_indicator.dart';
 import 'package:flutter/material.dart';
@@ -23,12 +25,18 @@ class OnBoardingScreen extends StatelessWidget {
             slideIconWidget: const Icon(Icons.arrow_back_ios),
             waveType: WaveType.circularReveal,
           ),
-        
           Positioned(
             top: 50,
+
             right: 20,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const LandingPage()),
+                );
+              },
               child: const Text("Skip", style: TextStyle(color: Colors.grey)),
             ),
           ),

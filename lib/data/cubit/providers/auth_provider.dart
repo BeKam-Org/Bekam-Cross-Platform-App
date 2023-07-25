@@ -129,6 +129,8 @@ class Auth implements AuthBase {
 /*-----------------------------------------------------------------------------------------------*/
    @override
   Future<User?> signInWithFacebook() async {
+    return null;
+  
     // final fb = FacebookLogin();
     // final response = await fb.logIn(permissions: [
     //   FacebookPermission.publicProfile,

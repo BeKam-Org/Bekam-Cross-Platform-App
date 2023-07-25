@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:994795731395:android:012098f058989d7371a576",
+        "mobilesdk_app_id": "1:994795731395:android:b55866fa7234ee1f71a576",
         "android_client_info": {
-          "package_name": "com.example.bekam"
+          "package_name": "com.smair.bekam.ecommerce.multistores"
         }
       },
       "oauth_client": [
@@ -29,6 +29,13 @@
             {
               "client_id": "994795731395-tmjng0g4icvpvnis362jkifkqgp4od6u.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "994795731395-0mncpfj1k1920l0101jdbem6r61eu9mc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bekam"
+              }
             }
           ]
         }
