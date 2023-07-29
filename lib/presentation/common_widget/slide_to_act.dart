@@ -1,7 +1,9 @@
 library flutterslidetoact;
 
+// 🎯 Dart imports:
 import 'dart:math';
 
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
 /// Slider call to action component

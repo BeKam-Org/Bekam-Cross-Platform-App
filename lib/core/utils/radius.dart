@@ -2,10 +2,13 @@ part of values;
 
 class GlobalAppBorderRadius {
   static BorderRadius r_10 = BorderRadius.circular(GlobalAppSizes.s_10);
-  static BorderRadius r_60 = BorderRadius.circular(GlobalAppSizes.s_60);
-  static BorderRadius r_150 = BorderRadius.circular(GlobalAppSizes.s_150);
+  //! top-right && bottom-right
+  static const BorderRadius topRight10BottomRight10 = BorderRadius.only(
+    topRight: GlobalAppRadius.c_10,
+    bottomRight: GlobalAppRadius.c_10,
+  );
 }
 
 class GlobalAppRadius {
-  static const r_25 = Radius.circular(GlobalAppSizes.s_25);
+  static const Radius c_10 = Radius.circular(GlobalAppSizes.s_10);
 }

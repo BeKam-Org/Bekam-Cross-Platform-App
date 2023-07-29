@@ -1,20 +1,23 @@
-// Flutter imports:
-import 'package:bekam/core/utils/values.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'common_theme.dart';
 
 /*------------------------------------------------------------------------------------------*/
 /*------------------------------------  Light Theme  ---------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
 
-ThemeData lightTheme = ThemeData.light().copyWith(
-  useMaterial3: true,
-  primaryColor: commonTheme.primaryColor,
-  colorScheme: ColorScheme.fromSwatch()
-      .copyWith(secondary: commonTheme.colorScheme.secondary),
-  scaffoldBackgroundColor: GlobalAppColors.kScaffoldLight,
-  dividerColor: commonTheme.dividerColor,
-  visualDensity: commonTheme.visualDensity,
+ThemeData lightTheme = ThemeData(
+  fontFamily: 'TitilliumWeb',
+  primaryColor: const Color(0xFF1B7FED),
+  brightness: Brightness.light,
+  highlightColor: Colors.white,
+  hintColor: const Color(0xFF9E9E9E),
+  pageTransitionsTheme: const PageTransitionsTheme(
+    builders: {
+      TargetPlatform.android: ZoomPageTransitionsBuilder(),
+      TargetPlatform.iOS: ZoomPageTransitionsBuilder(),
+      TargetPlatform.fuchsia: ZoomPageTransitionsBuilder(),
+    },
+  ),
 );

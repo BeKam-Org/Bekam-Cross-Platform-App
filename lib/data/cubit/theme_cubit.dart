@@ -1,4 +1,7 @@
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+
+// 📦 Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -6,7 +9,7 @@ part 'theme_state.dart';
 
 class ThemeCubit extends Cubit<ThemeState> {
   static ThemeCubit get(BuildContext context) => BlocProvider.of(context);
- ThemeCubit() : super(ThemeInitial()) {
+  ThemeCubit() : super(ThemeInitial()) {
     _loadPrefs();
   }
   // dark theme boolean variable
@@ -45,7 +48,7 @@ class ThemeCubit extends Cubit<ThemeState> {
 /*------------------------------------------------------------------------------------------*/
   _loadPrefs() async {
     await initPrefs();
-    darkTheme = _prefs!.getBool('theme') ?? ThemeMode.system == ThemeMode.dark;
+    darkTheme = _prefs!.getBool('theme') ?? false;
     emit(ThemeSharedPrefs());
   }
 }

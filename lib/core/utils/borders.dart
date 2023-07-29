@@ -6,29 +6,56 @@ mixin GlobalAppBorders {
 }
 
 class GlobalAppSizedBox {
-  static const SizedBox h_10 = SizedBox(
-    height: GlobalAppSizes.s_10,
+  //! width
+  static const w_15 = SizedBox(
+    width: GlobalAppSizes.s_15,
+  );
+  static const w_25 = SizedBox(
+    width: GlobalAppSizes.s_25,
   );
 
-  static const SizedBox w_40 = SizedBox(
-    width: GlobalAppSizes.s_40,
+  //! height
+  static const h_4 = SizedBox(
+    height: GlobalAppSizes.s_4,
+  );
+  static const h_16 = SizedBox(
+    height: GlobalAppSizes.s_16,
+  );
+  static const h_30 = SizedBox(
+    height: GlobalAppSizes.s_30,
   );
 }
 
 class GlobalAppSpacers {}
 
 class GlobalAppEdgeInsets {
-  // all
-  static const EdgeInsets a_5 = EdgeInsets.all(GlobalAppSizes.s_5);
-  static const EdgeInsets a_16 = EdgeInsets.all(GlobalAppSizes.s_16);
-  static const EdgeInsets a_30 = EdgeInsets.all(GlobalAppSizes.s_30);
-  // right
-  static const EdgeInsets right25 = EdgeInsets.only(right: GlobalAppSizes.s_25);
+  //! symmetric horizontall
+  static const EdgeInsets sh_20 =
+      EdgeInsets.symmetric(horizontal: GlobalAppSizes.s_20);
 
-  // left
-  static const EdgeInsets l_30 = EdgeInsets.only(left: GlobalAppSizes.s_30);
+  //! symmetric vertical
+  static const EdgeInsets sv_10 =
+      EdgeInsets.symmetric(vertical: GlobalAppSizes.s_10);
 
-  // mix
+  //! all
+  static const EdgeInsets all_0 = EdgeInsets.all(GlobalAppSizes.s_0);
+  static const EdgeInsets all_6 = EdgeInsets.all(GlobalAppSizes.s_6);
+  static const EdgeInsets all_10 = EdgeInsets.all(GlobalAppSizes.s_10);
+  static const EdgeInsets all_16 = EdgeInsets.all(GlobalAppSizes.s_16);
+  static const EdgeInsets all_20 = EdgeInsets.all(GlobalAppSizes.s_20);
+
+  //! top
+  static const EdgeInsets top_8 = EdgeInsets.only(top: GlobalAppSizes.s_8);
+
+  //! right
+
+  //! left
+  static const EdgeInsets left16Right16 = EdgeInsets.only(
+    left: GlobalAppSizes.s_16,
+    right: GlobalAppSizes.s_16,
+  );
+
+  //! mix
   static const EdgeInsets right20Top20 =
       EdgeInsets.only(right: GlobalAppSizes.s_20, top: GlobalAppSizes.s_20);
   static const EdgeInsets left20Top12 =
@@ -40,18 +67,10 @@ class GlobalAppEdgeInsets {
   static const EdgeInsets left30Right30 =
       EdgeInsets.only(left: GlobalAppSizes.s_30, right: 30.0);
 
-  // symmetric mix
-  static const EdgeInsets sh_10v_16 = EdgeInsets.symmetric(
-    horizontal: GlobalAppSizes.s_10,
-    vertical: GlobalAppSizes.s_16,
-  );
-  static const EdgeInsets sh_40v_14 = EdgeInsets.symmetric(
-    horizontal: GlobalAppSizes.s_40,
-    vertical: GlobalAppSizes.s_14,
-  );
+  //! symmetric mix
 
-  static const EdgeInsets sv_10 =
-      EdgeInsets.symmetric(vertical: GlobalAppSizes.s_10);
-      static const EdgeInsets sv_20 =
-      EdgeInsets.symmetric(vertical: GlobalAppSizes.s_20);
+  static const EdgeInsets sv12h15 = EdgeInsets.symmetric(
+    vertical: GlobalAppSizes.s_12,
+    horizontal: GlobalAppSizes.s_15,
+  );
 }

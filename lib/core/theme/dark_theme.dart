@@ -1,20 +1,23 @@
-// Flutter imports:
-import 'package:bekam/core/utils/values.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'common_theme.dart';
 
-/*------------------------------------------------------------------------------------------*/
-/*------------------------------------  Dark Theme  ---------------------------------------*/
-/*------------------------------------------------------------------------------------------*/
+//*------------------------------------------------------------------------------------------*/
+//*------------------------------------  Dark Theme  ---------------------------------------*/
+//*------------------------------------------------------------------------------------------*/
 
-ThemeData darkTheme = ThemeData.dark().copyWith(
-  useMaterial3: true,
-  primaryColor: commonTheme.primaryColor,
-  colorScheme: ColorScheme.fromSwatch()
-      .copyWith(secondary: commonTheme.colorScheme.secondary),
-  visualDensity: commonTheme.visualDensity,
-  dividerColor: commonTheme.dividerColor,
-  scaffoldBackgroundColor: GlobalAppColors.kScaffoldDark,
+ThemeData darkTheme = ThemeData(
+  fontFamily: 'TitilliumWeb',
+  primaryColor: const Color(0xFF1B7FED),
+  brightness: Brightness.dark,
+  highlightColor: const Color(0xFF252525),
+  hintColor: const Color(0xFFc7c7c7),
+  pageTransitionsTheme: const PageTransitionsTheme(
+    builders: {
+      TargetPlatform.android: ZoomPageTransitionsBuilder(),
+      TargetPlatform.iOS: ZoomPageTransitionsBuilder(),
+      TargetPlatform.fuchsia: ZoomPageTransitionsBuilder(),
+    },
+  ),
 );

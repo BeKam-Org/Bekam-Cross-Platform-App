@@ -1,7 +1,9 @@
 // ignore_for_file: import_of_legacy_library_into_null_safe
 
-import 'package:google_sign_in/google_sign_in.dart';
+// 📦 Package imports:
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 /*-----------------------------------------------------------------------------------------------*/
 /*-------------------------------------- auth abstract class ------------------------------------*/
@@ -14,7 +16,8 @@ abstract class AuthBase {
   signInWithGoogle();
   signInWithFacebook();
   signInWithEmailAndPassword(String email, String password);
-  createUserWithEmailAndPassword(String email, String password);
+  createUserWithEmailAndPassword(String email, String password, String name,
+      String phone);
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -55,10 +58,25 @@ class Auth implements AuthBase {
 /*------------------------------------- sign up email & pass  -----------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
   @override
-  Future<User?> createUserWithEmailAndPassword(
-      String email, String password) async {
+  Future<User?> createUserWithEmailAndPassword(String email, String password,
+      String name, String phone) async {
     final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
         email: email, password: password);
+
+    // save pass to database
+    final FirebaseFirestore db = FirebaseFirestore.instance;
+    final userRef = db.collection("users_data").doc(email);
+    if ((await userRef.get()).exists) {
+      await userRef.update({'Phone Number': (phone)});
+      await userRef.update({'verified_call': (false)});
+      await userRef.update({'name': (name)});
+    } else {
+      await userRef.set({'Phone Number': (phone)});
+      await userRef.set({'verified_call': (false)});
+      await userRef.set({'name': (name)});
+    }
+
+
     return userCredential.user;
   }
 
@@ -69,68 +87,27 @@ class Auth implements AuthBase {
 
   @override
   Future<User?> signInWithGoogle() async {
-      final GoogleSignInAccount? googleSignInAccount = await googleSignIn.signIn();
-  final GoogleSignInAuthentication googleSignInAuthentication =
-      await googleSignInAccount!.authentication;
+    final GoogleSignInAccount? googleSignInAccount =
+        await googleSignIn.signIn();
+    final GoogleSignInAuthentication googleSignInAuthentication =
+        await googleSignInAccount!.authentication;
 
-  final AuthCredential credential = GoogleAuthProvider.credential(
-    accessToken: googleSignInAuthentication.accessToken,
-    idToken: googleSignInAuthentication.idToken,
-  );
+    final AuthCredential credential = GoogleAuthProvider.credential(
+      accessToken: googleSignInAuthentication.accessToken,
+      idToken: googleSignInAuthentication.idToken,
+    );
 
-  final  authResult = await _firebaseAuth.signInWithCredential(credential);
- return authResult.user;
-
-
-
-  
-    // final googleSignIn = GoogleSignIn(
-    //   scopes: [
-    //     'mohamedkhalilalmasri@gmail.com',
-    //     'https://www.googleapis.com/auth/contacts.readonly',
-    //   ],
-    // );
-    // final googleUser = await googleSignIn.signIn();
-    // if (googleUser != null) {
-    //   final GoogleSignInAccount googleSignInAccount =
-    //       await googleSignIn.signIn();
-    //   final GoogleSignInAuthentication googleAuth =
-    //       await googleUser.authentication;
-    //   final AuthCredential credential = GoogleAuthProvider.getCredential(
-    //     accessToken: googleAuth.accessToken,
-    //     idToken: googleAuth.idToken,
-    //   );
-    //     final  authResult = await _firebaseAuth.signInWithCredential(credential);
-
-    //    return authResult.user;
-    //   // if (googleAuth.idToken != null) {
-    //   //   final userCredential = await _firebaseAuth
-    //   //       .signInWithCredential(GoogleAuthProvider.credential(
-    //   //     idToken: googleAuth.idToken,
-    //   //     accessToken: googleAuth.accessToken,
-    //   //   ));
-    //   //   return userCredential.user;
-    //   // } else {
-    //   //   throw FirebaseAuthException(
-    //   //       code: GlobalAppStrings.errorMissingGoogleIdToken,
-    //   //       message: GlobalAppStrings.missingGoogleIdToken);
-    //   // }
-    // } else {
-    //   throw FirebaseAuthException(
-    //     code: GlobalAppStrings.errorAbortedByUser,
-    //     message: GlobalAppStrings.signInAbortedByUser,
-    //   );
-    // }
+    final authResult = await _firebaseAuth.signInWithCredential(credential);
+    return authResult.user;
   }
-
 
 /*-----------------------------------------------------------------------------------------------*/
 /*----------------------------------- sign in/up with facebook  ---------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
-   @override
+  @override
   Future<User?> signInWithFacebook() async {
     return null;
-  
+
     // final fb = FacebookLogin();
     // final response = await fb.logIn(permissions: [
     //   FacebookPermission.publicProfile,
@@ -157,8 +134,6 @@ class Auth implements AuthBase {
     // }
   }
 
-
-
 /*-----------------------------------------------------------------------------------------------*/
 /*---------------------------------------- logout function  -------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
@@ -167,7 +142,7 @@ class Auth implements AuthBase {
     final googleSignIn = GoogleSignIn();
     await googleSignIn.signOut();
     //final facebookLogin = FacebookLogin();
-   // await facebookLogin.logOut();
+    // await facebookLogin.logOut();
     await _firebaseAuth.signOut();
   }
 }

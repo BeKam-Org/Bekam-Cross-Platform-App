@@ -1,7 +1,7 @@
 part of values;
 
 mixin GlobalAppStrings {
-  // login form strings
+  //! login form strings
   static const String emailHint = "What's your email address?";
   static const String email = "Email";
   static const String passwordHint = "I'm not watching";
@@ -10,7 +10,12 @@ mixin GlobalAppStrings {
   static const String phoneNumber = "Phone Number";
   static const String phoneNumberHint = "What's your phone number? ";
   static const String login = "Login";
+
+  //! signup form strings
   static const String signUp = "Sign Up";
+  static const String firstName = 'First Name';
+  static const String lastName = 'last Name';
+  
   static const String google = "Google";
   static const String facebook = "FaceBook";
   static const String logout = "Logout";
@@ -30,4 +35,13 @@ mixin GlobalAppStrings {
   static const String shareApp = 'Share App';
 
   static const String appHintCircleText = "Animated Login-Flutter";
+
+  static const String resendEmail = "Resend Email";
+  static const String notVerifiedMail = "Check your mail";
+  static const String checkMail = "...loading";
+  static const String notVerifiedMailMessage =
+      'You are one step away, please check verify your mail from the link sent to you';
+    static const String pressToLogout = "Press to logout";
+
+
 }
