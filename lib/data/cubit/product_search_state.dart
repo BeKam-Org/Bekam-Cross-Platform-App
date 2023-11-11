@@ -17,19 +17,3 @@ class SearchResultState <T> with _$SearchResultState{
       Error<T>;
 } 
 
-
-
-
-
-
-// part of 'product_search_cubit.dart';
-
-// @immutable
-// abstract class ProductSearchState {}
-
-// class ProductSearchInitial extends ProductSearchState {}
-
-// class GetSearchResult extends ProductSearchState {
-//   final SearchResultModel searchResult;
-//   GetSearchResult(this.searchResult);
-// }
