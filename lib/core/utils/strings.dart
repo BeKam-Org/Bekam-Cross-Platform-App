@@ -1,6 +1,7 @@
 part of values;
 
 mixin GlobalAppStrings {
+  static const String baseUrl = 'https://efood-admin.6amtech.com';
   //! login form strings
   static const String emailHint = "What's your email address?";
   static const String email = "Email";
@@ -15,7 +16,7 @@ mixin GlobalAppStrings {
   static const String signUp = "Sign Up";
   static const String firstName = 'First Name';
   static const String lastName = 'last Name';
-  
+
   static const String google = "Google";
   static const String facebook = "FaceBook";
   static const String logout = "Logout";
@@ -41,7 +42,5 @@ mixin GlobalAppStrings {
   static const String checkMail = "...loading";
   static const String notVerifiedMailMessage =
       'You are one step away, please check verify your mail from the link sent to you';
-    static const String pressToLogout = "Press to logout";
-
-
+  static const String pressToLogout = "Press to logout";
 }

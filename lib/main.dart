@@ -1,7 +1,9 @@
 // 🐦 Flutter imports:
+import 'package:bekam/data/cubit/category_cubit.dart';
 import 'package:bekam/data/cubit/logout_cubit.dart';
 import 'package:bekam/data/cubit/user_verification_helper_cubit.dart';
-import 'package:bekam/presentation/screens/search/search_page.dart';
+import 'package:bekam/data/injection.dart';
+import 'package:bekam/presentation/screens/trial.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -23,6 +25,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  getItSetup();
   runApp(const MyApp());
 }
 
@@ -52,9 +55,9 @@ class MyApp extends StatelessWidget {
           create: (context) => UserVerificationHelperCubit(),
         ),
 
-        // BlocProvider<ProductSearchCubit>(
-        //   create: (context) => getIt<ProductSearchCubit>()
-        // ),
+        BlocProvider(
+        create: (context) => getIt<CategoryCubit>(),
+      ),
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
@@ -66,7 +69,7 @@ class MyApp extends StatelessWidget {
             themeMode: ThemeCubit.get(context).theme
                 ? ThemeMode.dark
                 : ThemeMode.light,
-            home: const SearchPage(),
+            home: const HomeScreen(),
           );
         },
       ),
