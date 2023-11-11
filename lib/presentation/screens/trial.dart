@@ -1,5 +1,8 @@
+import 'package:bekam/data/cubit/banner_cubit.dart';
+import 'package:bekam/data/cubit/banner_state.dart';
 import 'package:bekam/data/cubit/category_cubit.dart';
 import 'package:bekam/data/cubit/category_state.dart';
+import 'package:bekam/data/model/banner_model.dart';
 import 'package:bekam/data/model/category_model.dart';
 import 'package:bekam/data/repository/network_exception.dart';
 
@@ -20,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    BlocProvider.of<CategoryCubit>(context).getCategoryList();
+    BlocProvider.of<BannerCubit>(context).getBaannerList();
   }
 
   @override
@@ -31,8 +34,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          BlocBuilder<CategoryCubit, CategoryState<List<CategoryModel>>>(
-            builder: (context, CategoryState<List<CategoryModel>> state) {
+          BlocBuilder<BannerCubit, BannerState<List<BannerModel>>>(
+            builder: (context, BannerState<List<BannerModel>> state) {
               return state.when(
                 idle: () {
                   return const Center(child: CircularProgressIndicator());
@@ -40,8 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 loading: () {
                   return const Center(child: CircularProgressIndicator());
                 },
-                success: (categoryModel) {
-                  List<CategoryModel> response = categoryModel;
+                success: (bannerModel) {
+                  List<BannerModel> response = bannerModel;
                   return SizedBox(
                     height: MediaQuery.sizeOf(context).height,
                     child: MasonryGridView.count(
@@ -50,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisSpacing: 4,
                       crossAxisSpacing: 4,
                       itemBuilder: (context, index) {
-                        return Text(response[index].name!);
+                        return Text(response[index].title!);
                       },
                     ),
                   );

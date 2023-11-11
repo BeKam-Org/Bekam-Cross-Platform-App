@@ -1,4 +1,5 @@
 // 🐦 Flutter imports:
+import 'package:bekam/data/cubit/banner_cubit.dart';
 import 'package:bekam/data/cubit/category_cubit.dart';
 import 'package:bekam/data/cubit/logout_cubit.dart';
 import 'package:bekam/data/cubit/user_verification_helper_cubit.dart';
@@ -54,10 +55,12 @@ class MyApp extends StatelessWidget {
         BlocProvider<UserVerificationHelperCubit>(
           create: (context) => UserVerificationHelperCubit(),
         ),
-
-        BlocProvider(
-        create: (context) => getIt<CategoryCubit>(),
-      ),
+        BlocProvider<CategoryCubit>(
+          create: (context) => getIt<CategoryCubit>(),
+        ),
+         BlocProvider<BannerCubit>(
+          create: (context) => getIt<BannerCubit>(),
+        ),
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
