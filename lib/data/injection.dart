@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 
 // void getItSetup() {
 //   getIt.registerLazySingleton<ProductSearchCubit>(()=> ProductSearchCubit(getIt()));
-//   getIt.registerLazySingleton<SearchRepository>(()=> SearchRepository(getIt()));
+//   getIt.registerLazySingleton<SearchRepository>(()=>SearchRepository (getIt()));
 //   getIt.registerLazySingleton<SearchWbService>(()=> SearchWbService(createAndSetupDio()));
 // }
 

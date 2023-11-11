@@ -1,7 +1,7 @@
 // 🐦 Flutter imports:
 import 'package:bekam/data/cubit/logout_cubit.dart';
 import 'package:bekam/data/cubit/user_verification_helper_cubit.dart';
-import 'package:bekam/presentation/screens/landing_page.dart';
+import 'package:bekam/presentation/screens/search/search_page.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
             themeMode: ThemeCubit.get(context).theme
                 ? ThemeMode.dark
                 : ThemeMode.light,
-            home: const LandingPage(),
+            home: const SearchPage(),
           );
         },
       ),
