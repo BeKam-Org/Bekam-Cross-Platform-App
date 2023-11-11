@@ -1,0 +1,93 @@
+[
+    {
+        "id": 28,
+        "name": "Set Menu",
+        "parent_id": 0,
+        "position": 0,
+        "status": 1,
+        "priority": 1,
+        "created_at": "2021-02-13T06:08:40.000000Z",
+        "updated_at": "2023-11-07T12:23:10.000000Z",
+        "image": "2021-02-13-6027c1486519a.png",
+        "banner_image": "2023-11-07-654a2c2e45cf2.png",
+        "translations": []
+    },
+    {
+        "id": 39,
+        "name": "Hot Item",
+        "parent_id": 0,
+        "position": 0,
+        "status": 1,
+        "priority": 3,
+        "created_at": "2021-02-26T00:19:36.000000Z",
+        "updated_at": "2023-11-07T12:23:29.000000Z",
+        "image": "2021-02-26-603892f899576.png",
+        "banner_image": "2023-11-07-654a2c41c1724.png",
+        "translations": []
+    },
+    {
+        "id": 27,
+        "name": "Biriyani",
+        "parent_id": 0,
+        "position": 0,
+        "status": 1,
+        "priority": 4,
+        "created_at": "2021-02-13T06:08:25.000000Z",
+        "updated_at": "2023-11-07T12:23:51.000000Z",
+        "image": "2021-02-13-6027c139c348f.png",
+        "banner_image": "2023-11-07-654a2c57dfd4e.png",
+        "translations": []
+    },
+    {
+        "id": 38,
+        "name": "Drinks",
+        "parent_id": 0,
+        "position": 0,
+        "status": 1,
+        "priority": 6,
+        "created_at": "2021-02-26T00:00:13.000000Z",
+        "updated_at": "2023-11-07T12:24:11.000000Z",
+        "image": "2021-02-26-60388e6d7306b.png",
+        "banner_image": "2023-11-07-654a2c6bcf12d.png",
+        "translations": []
+    },
+    {
+        "id": 25,
+        "name": "Pizza",
+        "parent_id": 0,
+        "position": 0,
+        "status": 1,
+        "priority": 8,
+        "created_at": "2021-02-13T06:07:54.000000Z",
+        "updated_at": "2023-11-07T12:24:29.000000Z",
+        "image": "2021-02-13-6027c11aa03b3.png",
+        "banner_image": "2023-11-07-654a2c7dd6c2c.png",
+        "translations": []
+    },
+    {
+        "id": 26,
+        "name": "Sandwich",
+        "parent_id": 0,
+        "position": 0,
+        "status": 1,
+        "priority": 9,
+        "created_at": "2021-02-13T06:08:08.000000Z",
+        "updated_at": "2023-11-07T12:24:47.000000Z",
+        "image": "2021-02-13-6027c1289249c.png",
+        "banner_image": "2023-11-07-654a2c8f0f02c.png",
+        "translations": []
+    },
+    {
+        "id": 24,
+        "name": "Burger",
+        "parent_id": 0,
+        "position": 0,
+        "status": 1,
+        "priority": 10,
+        "created_at": "2021-02-13T06:07:36.000000Z",
+        "updated_at": "2023-11-07T12:25:05.000000Z",
+        "image": "2021-02-13-6027c1082f04a.png",
+        "banner_image": "2023-11-07-654a2ca13f242.png",
+        "translations": []
+    }
+]

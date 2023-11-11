@@ -1,0 +1,1345 @@
+{
+    "total_size": 19,
+    "limit": "12",
+    "offset": "1",
+    "products": [
+        {
+            "id": 19,
+            "name": "Zinger & Pop",
+            "description": "Enjoy your weekend with Classic Zinger Burger, Large Popcorn & Large Fries.",
+            "image": "2021-02-26-6038903ac16c7.png",
+            "price": 100,
+            "variations": [
+                {
+                    "name": "AddFun",
+                    "type": "multi",
+                    "min": "1",
+                    "max": "2",
+                    "required": "on",
+                    "values": [
+                        {
+                            "label": "Large Juice",
+                            "optionPrice": "22"
+                        },
+                        {
+                            "label": "Chicken Finger",
+                            "optionPrice": "33"
+                        },
+                        {
+                            "label": "Mid Fries",
+                            "optionPrice": "11"
+                        },
+                        {
+                            "label": "Half Fries",
+                            "optionPrice": "31"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 0,
+            "available_time_starts": "00:20:00",
+            "available_time_ends": "23:52:00",
+            "status": 1,
+            "created_at": "2021-02-26T00:07:54.000000Z",
+            "updated_at": "2023-11-07T12:29:57.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "28",
+                    "position": 1
+                },
+                {
+                    "id": "37",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 0,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 1,
+            "popularity_count": 17,
+            "product_type": "veg",
+            "rating": [
+                {
+                    "average": "5.0000",
+                    "product_id": 19
+                }
+            ],
+            "branch_product": {
+                "id": 14,
+                "product_id": 19,
+                "price": 100,
+                "discount_type": "percent",
+                "discount": 0,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "AddFun",
+                        "type": "multi",
+                        "min": "1",
+                        "max": "2",
+                        "required": "on",
+                        "values": [
+                            {
+                                "label": "Large Juice",
+                                "optionPrice": "22"
+                            },
+                            {
+                                "label": "Chicken Finger",
+                                "optionPrice": "33"
+                            },
+                            {
+                                "label": "Mid Fries",
+                                "optionPrice": "11"
+                            },
+                            {
+                                "label": "Half Fries",
+                                "optionPrice": "31"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T17:03:30.000000Z",
+                "updated_at": "2023-11-07T12:29:57.000000Z",
+                "stock_type": "fixed",
+                "stock": 60,
+                "sold_quantity": 5
+            }
+        },
+        {
+            "id": 20,
+            "name": "Popcorn Rice Bowl",
+            "description": "This is the gravy-yard shift! Rice layered with spicy, exotic gravy & topped off with crispy popcorn chicken!",
+            "image": "2021-02-26-6038911d8ddfa.png",
+            "price": 130,
+            "variations": [
+                {
+                    "name": "AddFun",
+                    "type": "single",
+                    "min": 0,
+                    "max": 0,
+                    "required": "off",
+                    "values": [
+                        {
+                            "label": "Max Rice",
+                            "optionPrice": "40"
+                        },
+                        {
+                            "label": "Extra Chicken",
+                            "optionPrice": "50"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 0,
+            "available_time_starts": "00:31:00",
+            "available_time_ends": "23:58:00",
+            "status": 1,
+            "created_at": "2021-02-26T00:11:41.000000Z",
+            "updated_at": "2023-11-11T02:27:37.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "28",
+                    "position": 1
+                },
+                {
+                    "id": "36",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 0,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 1,
+            "popularity_count": 12,
+            "product_type": "veg",
+            "rating": [],
+            "branch_product": {
+                "id": 2,
+                "product_id": 20,
+                "price": 130,
+                "discount_type": "percent",
+                "discount": 0,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "AddFun",
+                        "type": "single",
+                        "min": 0,
+                        "max": 0,
+                        "required": "off",
+                        "values": [
+                            {
+                                "label": "Max Rice",
+                                "optionPrice": "40"
+                            },
+                            {
+                                "label": "Extra Chicken",
+                                "optionPrice": "50"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T16:34:36.000000Z",
+                "updated_at": "2023-03-08T16:04:09.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 8,
+            "name": "Chicken Biriyani",
+            "description": "",
+            "image": "2021-02-01-601712b76958e.png",
+            "price": 120,
+            "variations": [
+                {
+                    "name": "Borhani",
+                    "type": "single",
+                    "min": 0,
+                    "max": 0,
+                    "required": "off",
+                    "values": [
+                        {
+                            "label": "1 ltr",
+                            "optionPrice": "12"
+                        },
+                        {
+                            "label": "half",
+                            "optionPrice": "6"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 0,
+            "available_time_starts": "10:30:00",
+            "available_time_ends": "19:30:00",
+            "status": 1,
+            "created_at": "2021-01-31T20:27:35.000000Z",
+            "updated_at": "2023-11-07T12:09:22.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "27",
+                    "position": 1
+                },
+                {
+                    "id": "34",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 0,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 0,
+            "popularity_count": 10,
+            "product_type": "veg",
+            "rating": [],
+            "branch_product": {
+                "id": 9,
+                "product_id": 8,
+                "price": 120,
+                "discount_type": "percent",
+                "discount": 0,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "Borhani",
+                        "type": "single",
+                        "min": 0,
+                        "max": 0,
+                        "required": "off",
+                        "values": [
+                            {
+                                "label": "1 ltr",
+                                "optionPrice": "12"
+                            },
+                            {
+                                "label": "half",
+                                "optionPrice": "6"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T16:46:33.000000Z",
+                "updated_at": "2023-03-08T15:54:12.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 7,
+            "name": "Set Menu 1",
+            "description": "Rice, Chicken, Coke, Salad, Smash Potato",
+            "image": "2021-02-01-601711684f2c5.png",
+            "price": 1500,
+            "variations": [
+                {
+                    "name": "Person",
+                    "type": "single",
+                    "min": 0,
+                    "max": 0,
+                    "required": "on",
+                    "values": [
+                        {
+                            "label": "5",
+                            "optionPrice": "100"
+                        },
+                        {
+                            "label": "8",
+                            "optionPrice": "333"
+                        },
+                        {
+                            "label": "10",
+                            "optionPrice": "200"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 7,
+                    "name": "Cheese",
+                    "price": 20,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:14.000000Z",
+                    "updated_at": "2021-01-31T19:34:14.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 10,
+            "available_time_starts": "10:30:00",
+            "available_time_ends": "19:30:00",
+            "status": 1,
+            "created_at": "2021-01-31T20:22:00.000000Z",
+            "updated_at": "2023-11-07T12:07:48.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "28",
+                    "position": 1
+                },
+                {
+                    "id": "36",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 2,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 1,
+            "popularity_count": 5,
+            "product_type": "veg",
+            "rating": [],
+            "branch_product": {
+                "id": 8,
+                "product_id": 7,
+                "price": 1500,
+                "discount_type": "percent",
+                "discount": 2,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "Person",
+                        "type": "single",
+                        "min": 0,
+                        "max": 0,
+                        "required": "on",
+                        "values": [
+                            {
+                                "label": "5",
+                                "optionPrice": "100"
+                            },
+                            {
+                                "label": "8",
+                                "optionPrice": "333"
+                            },
+                            {
+                                "label": "10",
+                                "optionPrice": "200"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T16:45:35.000000Z",
+                "updated_at": "2023-03-08T15:52:25.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 22,
+            "name": "Buddy Zinger Combo",
+            "description": null,
+            "image": "2021-02-26-60389495f26f9.png",
+            "price": 200,
+            "variations": [],
+            "add_ons": [
+                {
+                    "id": 7,
+                    "name": "Cheese",
+                    "price": 20,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:14.000000Z",
+                    "updated_at": "2021-01-31T19:34:14.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 9.75,
+            "available_time_starts": "02:30:00",
+            "available_time_ends": "23:34:00",
+            "status": 1,
+            "created_at": "2021-02-26T00:25:51.000000Z",
+            "updated_at": "2023-11-11T02:27:37.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "24",
+                    "position": 1
+                },
+                {
+                    "id": "30",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 10,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 0,
+            "popularity_count": 4,
+            "product_type": null,
+            "rating": [],
+            "branch_product": {
+                "id": 17,
+                "product_id": 22,
+                "price": 200,
+                "discount_type": "percent",
+                "discount": 10,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [],
+                "created_at": "2023-02-18T17:13:46.000000Z",
+                "updated_at": "2023-03-08T15:55:54.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 16,
+            "name": "Spicy Burger",
+            "description": "",
+            "image": "2021-02-24-60360c3059cae.png",
+            "price": 120,
+            "variations": [
+                {
+                    "name": "Extra Spicy",
+                    "type": "multi",
+                    "min": "1",
+                    "max": "2",
+                    "required": "on",
+                    "values": [
+                        {
+                            "label": "Beef",
+                            "optionPrice": "15"
+                        },
+                        {
+                            "label": "Cheese",
+                            "optionPrice": "20"
+                        },
+                        {
+                            "label": "Omlet Beef",
+                            "optionPrice": "25"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 7,
+                    "name": "Cheese",
+                    "price": 20,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:14.000000Z",
+                    "updated_at": "2021-01-31T19:34:14.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 15,
+            "available_time_starts": "00:00:00",
+            "available_time_ends": "23:59:00",
+            "status": 1,
+            "created_at": "2021-02-13T10:54:03.000000Z",
+            "updated_at": "2023-03-08T16:01:35.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "24",
+                    "position": 1
+                },
+                {
+                    "id": "30",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 40,
+            "discount_type": "percent",
+            "tax_type": "amount",
+            "set_menu": 0,
+            "popularity_count": 4,
+            "product_type": "veg",
+            "rating": [
+                {
+                    "average": "3.0000",
+                    "product_id": 16
+                }
+            ],
+            "branch_product": {
+                "id": 13,
+                "product_id": 16,
+                "price": 120,
+                "discount_type": "percent",
+                "discount": 40,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "Extra Spicy",
+                        "type": "multi",
+                        "min": "1",
+                        "max": "2",
+                        "required": "on",
+                        "values": [
+                            {
+                                "label": "Beef",
+                                "optionPrice": "15"
+                            },
+                            {
+                                "label": "Cheese",
+                                "optionPrice": "20"
+                            },
+                            {
+                                "label": "Omlet Beef",
+                                "optionPrice": "25"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T17:02:04.000000Z",
+                "updated_at": "2023-03-08T16:01:35.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 11,
+            "name": "Cheese Sandwich With Spicy Grilled",
+            "description": "",
+            "image": "2021-02-01-60171610bf3c0.png",
+            "price": 25,
+            "variations": [
+                {
+                    "name": "Type",
+                    "type": "multi",
+                    "min": "1",
+                    "max": "2",
+                    "required": "on",
+                    "values": [
+                        {
+                            "label": "Extra Grill",
+                            "optionPrice": "3"
+                        },
+                        {
+                            "label": "Mid cheese",
+                            "optionPrice": "5"
+                        },
+                        {
+                            "label": "Extra Cheese",
+                            "optionPrice": "6"
+                        },
+                        {
+                            "label": "Mid Grill",
+                            "optionPrice": "4"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 7,
+                    "name": "Cheese",
+                    "price": 20,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:14.000000Z",
+                    "updated_at": "2021-01-31T19:34:14.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 0,
+            "available_time_starts": "00:00:00",
+            "available_time_ends": "23:59:00",
+            "status": 1,
+            "created_at": "2021-01-31T20:41:52.000000Z",
+            "updated_at": "2023-03-08T16:00:39.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "26",
+                    "position": 1
+                },
+                {
+                    "id": "32",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 0,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 0,
+            "popularity_count": 4,
+            "product_type": "veg",
+            "rating": [
+                {
+                    "average": "5.0000",
+                    "product_id": 11
+                }
+            ],
+            "branch_product": {
+                "id": 12,
+                "product_id": 11,
+                "price": 25,
+                "discount_type": "percent",
+                "discount": 0,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "Type",
+                        "type": "multi",
+                        "min": "1",
+                        "max": "2",
+                        "required": "on",
+                        "values": [
+                            {
+                                "label": "Extra Grill",
+                                "optionPrice": "3"
+                            },
+                            {
+                                "label": "Mid cheese",
+                                "optionPrice": "5"
+                            },
+                            {
+                                "label": "Extra Cheese",
+                                "optionPrice": "6"
+                            },
+                            {
+                                "label": "Mid Grill",
+                                "optionPrice": "4"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T17:00:45.000000Z",
+                "updated_at": "2023-03-08T16:00:39.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 6,
+            "name": "Mozzarella Cheese Pizza",
+            "description": "",
+            "image": "2021-02-01-6017104848534.png",
+            "price": 500,
+            "variations": [
+                {
+                    "name": "Size",
+                    "type": "single",
+                    "min": 0,
+                    "max": 0,
+                    "required": "on",
+                    "values": [
+                        {
+                            "label": "12\"",
+                            "optionPrice": "120"
+                        },
+                        {
+                            "label": "8\"",
+                            "optionPrice": "100"
+                        },
+                        {
+                            "label": "24\"",
+                            "optionPrice": "200"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 7,
+                    "name": "Cheese",
+                    "price": 20,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:14.000000Z",
+                    "updated_at": "2021-01-31T19:34:14.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 0,
+            "available_time_starts": "10:30:00",
+            "available_time_ends": "19:30:00",
+            "status": 1,
+            "created_at": "2021-01-31T20:17:12.000000Z",
+            "updated_at": "2023-03-08T15:53:07.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "25",
+                    "position": 1
+                },
+                {
+                    "id": "31",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 5,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 0,
+            "popularity_count": 4,
+            "product_type": "veg",
+            "rating": [
+                {
+                    "average": "3.0000",
+                    "product_id": 6
+                }
+            ],
+            "branch_product": {
+                "id": 7,
+                "product_id": 6,
+                "price": 500,
+                "discount_type": "percent",
+                "discount": 5,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "Size",
+                        "type": "single",
+                        "min": 0,
+                        "max": 0,
+                        "required": "on",
+                        "values": [
+                            {
+                                "label": "12\"",
+                                "optionPrice": "120"
+                            },
+                            {
+                                "label": "8\"",
+                                "optionPrice": "100"
+                            },
+                            {
+                                "label": "24\"",
+                                "optionPrice": "200"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T16:44:02.000000Z",
+                "updated_at": "2023-03-08T15:53:07.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 25,
+            "name": "Ice Cream",
+            "description": "Cup ice cream for all.",
+            "image": "2023-03-08-640971a60477f.png",
+            "price": 300,
+            "variations": [],
+            "add_ons": [],
+            "tax": 50,
+            "available_time_starts": "10:30:00",
+            "available_time_ends": "19:30:00",
+            "status": 1,
+            "created_at": "2023-03-08T15:41:58.000000Z",
+            "updated_at": "2023-09-11T02:04:19.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "38",
+                    "position": 1
+                }
+            ],
+            "choice_options": [],
+            "discount": 30,
+            "discount_type": "amount",
+            "tax_type": "amount",
+            "set_menu": 0,
+            "popularity_count": 3,
+            "product_type": "veg",
+            "rating": [],
+            "branch_product": {
+                "id": 26,
+                "product_id": 25,
+                "price": 300,
+                "discount_type": "amount",
+                "discount": 30,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [],
+                "created_at": "2023-03-08T15:41:58.000000Z",
+                "updated_at": "2023-03-08T16:04:53.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 10,
+            "name": "Set Menu 2",
+            "description": "Burger, Coke, and French Fries",
+            "image": "2022-06-12-62a589d4d1130.png",
+            "price": 240,
+            "variations": [
+                {
+                    "name": "person",
+                    "type": "single",
+                    "min": 0,
+                    "max": 0,
+                    "required": "on",
+                    "values": [
+                        {
+                            "label": "4",
+                            "optionPrice": "80"
+                        },
+                        {
+                            "label": "8",
+                            "optionPrice": "160"
+                        },
+                        {
+                            "label": "2",
+                            "optionPrice": "40"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 10,
+            "available_time_starts": "00:00:00",
+            "available_time_ends": "23:59:00",
+            "status": 1,
+            "created_at": "2021-01-31T20:36:13.000000Z",
+            "updated_at": "2023-03-08T16:00:08.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "28",
+                    "position": 1
+                },
+                {
+                    "id": "37",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 0,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 1,
+            "popularity_count": 3,
+            "product_type": "veg",
+            "rating": [
+                {
+                    "average": "4.3333",
+                    "product_id": 10
+                }
+            ],
+            "branch_product": {
+                "id": 11,
+                "product_id": 10,
+                "price": 240,
+                "discount_type": "percent",
+                "discount": 0,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "person",
+                        "type": "single",
+                        "min": 0,
+                        "max": 0,
+                        "required": "on",
+                        "values": [
+                            {
+                                "label": "4",
+                                "optionPrice": "80"
+                            },
+                            {
+                                "label": "8",
+                                "optionPrice": "160"
+                            },
+                            {
+                                "label": "2",
+                                "optionPrice": "40"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T16:58:46.000000Z",
+                "updated_at": "2023-03-08T16:00:08.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 5,
+            "name": "Italian Spicy Pizza",
+            "description": "",
+            "image": "2021-02-13-6027c27beddb2.png",
+            "price": 660,
+            "variations": [
+                {
+                    "name": "Size with Addon",
+                    "type": "multi",
+                    "min": "1",
+                    "max": "2",
+                    "required": "on",
+                    "values": [
+                        {
+                            "label": "12\" extra meat",
+                            "optionPrice": "21"
+                        },
+                        {
+                            "label": "6\" extra cheese",
+                            "optionPrice": "12"
+                        },
+                        {
+                            "label": "8\" extra sauce",
+                            "optionPrice": "22"
+                        }
+                    ]
+                },
+                {
+                    "name": "Drinks",
+                    "type": "single",
+                    "min": 0,
+                    "max": 0,
+                    "required": "off",
+                    "values": [
+                        {
+                            "label": "Combo Juice",
+                            "optionPrice": "32"
+                        },
+                        {
+                            "label": "Single Juice",
+                            "optionPrice": "12"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 7,
+                    "name": "Cheese",
+                    "price": 20,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:14.000000Z",
+                    "updated_at": "2021-01-31T19:34:14.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 0,
+            "available_time_starts": "10:30:00",
+            "available_time_ends": "19:30:00",
+            "status": 1,
+            "created_at": "2021-01-31T20:08:29.000000Z",
+            "updated_at": "2023-03-08T16:28:41.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "25",
+                    "position": 1
+                },
+                {
+                    "id": "31",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 10,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 0,
+            "popularity_count": 2,
+            "product_type": "veg",
+            "rating": [],
+            "branch_product": {
+                "id": 6,
+                "product_id": 5,
+                "price": 660,
+                "discount_type": "percent",
+                "discount": 10,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "Size with Addon",
+                        "type": "multi",
+                        "min": "1",
+                        "max": "2",
+                        "required": "on",
+                        "values": [
+                            {
+                                "label": "12\" extra meat",
+                                "optionPrice": "21"
+                            },
+                            {
+                                "label": "6\" extra cheese",
+                                "optionPrice": "12"
+                            },
+                            {
+                                "label": "8\" extra sauce",
+                                "optionPrice": "22"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Drinks",
+                        "type": "single",
+                        "min": 0,
+                        "max": 0,
+                        "required": "off",
+                        "values": [
+                            {
+                                "label": "Combo Juice",
+                                "optionPrice": "32"
+                            },
+                            {
+                                "label": "Single Juice",
+                                "optionPrice": "12"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T16:42:44.000000Z",
+                "updated_at": "2023-03-08T15:51:04.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        },
+        {
+            "id": 3,
+            "name": "Beef Spicy Burger",
+            "description": "A crispy fillet of 100% real veggies, topped with lettuce & mayo, served in a soft sesame bun. It's juicy, spicy, and crunchy!",
+            "image": "2021-02-01-60170c761f017.png",
+            "price": 230,
+            "variations": [
+                {
+                    "name": "Spicy",
+                    "type": "single",
+                    "min": 0,
+                    "max": 0,
+                    "required": "off",
+                    "values": [
+                        {
+                            "label": "Extra Naga",
+                            "optionPrice": "25"
+                        },
+                        {
+                            "label": "Naga",
+                            "optionPrice": "18"
+                        }
+                    ]
+                }
+            ],
+            "add_ons": [
+                {
+                    "id": 7,
+                    "name": "Cheese",
+                    "price": 20,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:14.000000Z",
+                    "updated_at": "2021-01-31T19:34:14.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 8,
+                    "name": "Coke",
+                    "price": 5,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:23.000000Z",
+                    "updated_at": "2021-01-31T19:34:23.000000Z",
+                    "translations": []
+                },
+                {
+                    "id": 9,
+                    "name": "Water",
+                    "price": 15,
+                    "tax": 0,
+                    "created_at": "2021-01-31T19:34:44.000000Z",
+                    "updated_at": "2021-01-31T19:34:44.000000Z",
+                    "translations": []
+                }
+            ],
+            "tax": 5,
+            "available_time_starts": "00:00:00",
+            "available_time_ends": "23:59:00",
+            "status": 1,
+            "created_at": "2021-01-31T20:00:54.000000Z",
+            "updated_at": "2023-11-11T02:26:07.000000Z",
+            "attributes": [],
+            "category_ids": [
+                {
+                    "id": "24",
+                    "position": 1
+                },
+                {
+                    "id": "29",
+                    "position": 2
+                }
+            ],
+            "choice_options": [],
+            "discount": 5,
+            "discount_type": "percent",
+            "tax_type": "percent",
+            "set_menu": 0,
+            "popularity_count": 2,
+            "product_type": "veg",
+            "rating": [],
+            "branch_product": {
+                "id": 4,
+                "product_id": 3,
+                "price": 230,
+                "discount_type": "percent",
+                "discount": 5,
+                "branch_id": 1,
+                "is_available": 1,
+                "variations": [
+                    {
+                        "name": "Spicy",
+                        "type": "single",
+                        "min": 0,
+                        "max": 0,
+                        "required": "off",
+                        "values": [
+                            {
+                                "label": "Extra Naga",
+                                "optionPrice": "25"
+                            },
+                            {
+                                "label": "Naga",
+                                "optionPrice": "18"
+                            }
+                        ]
+                    }
+                ],
+                "created_at": "2023-02-18T16:38:45.000000Z",
+                "updated_at": "2023-03-08T15:48:02.000000Z",
+                "stock_type": "unlimited",
+                "stock": 0,
+                "sold_quantity": 0
+            }
+        }
+    ]
+}

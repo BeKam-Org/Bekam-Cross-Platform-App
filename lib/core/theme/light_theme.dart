@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 
 ThemeData lightTheme = ThemeData(
   fontFamily: 'TitilliumWeb',
-  primaryColor: const Color(0xFF1B7FED),
+  primaryColor: const Color.fromRGBO(144, 168, 88, 1),
   brightness: Brightness.light,
   highlightColor: Colors.white,
   hintColor: const Color(0xFF9E9E9E),

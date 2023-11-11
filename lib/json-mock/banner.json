@@ -1,0 +1,52 @@
+[
+    {
+        "id": 3,
+        "title": "Banner 3",
+        "image": "2021-02-26-60388d186e180.png",
+        "product_id": 4,
+        "status": 1,
+        "created_at": "2021-01-31T20:51:38.000000Z",
+        "updated_at": "2022-02-16T13:28:13.000000Z",
+        "category_id": null
+    },
+    {
+        "id": 10,
+        "title": "Special offer",
+        "image": "2023-11-07-654a2add22528.png",
+        "product_id": 5,
+        "status": 1,
+        "created_at": "2023-11-07T12:17:33.000000Z",
+        "updated_at": "2023-11-07T12:17:33.000000Z",
+        "category_id": null
+    },
+    {
+        "id": 11,
+        "title": "Sepecial offer (Up to 50% Off)",
+        "image": "2023-11-07-654a2b25d0103.png",
+        "product_id": null,
+        "status": 1,
+        "created_at": "2023-11-07T12:18:45.000000Z",
+        "updated_at": "2023-11-07T12:18:45.000000Z",
+        "category_id": 39
+    },
+    {
+        "id": 12,
+        "title": "Up to 20% off",
+        "image": "2023-11-07-654a2b6723fb3.png",
+        "product_id": 3,
+        "status": 1,
+        "created_at": "2023-11-07T12:19:51.000000Z",
+        "updated_at": "2023-11-07T12:19:51.000000Z",
+        "category_id": null
+    },
+    {
+        "id": 13,
+        "title": "Offer on every order",
+        "image": "2023-11-07-654a2d3043188.png",
+        "product_id": null,
+        "status": 1,
+        "created_at": "2023-11-07T12:27:28.000000Z",
+        "updated_at": "2023-11-07T12:27:28.000000Z",
+        "category_id": 25
+    }
+]
