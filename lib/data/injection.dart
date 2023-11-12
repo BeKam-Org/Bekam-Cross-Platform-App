@@ -1,9 +1,13 @@
 import 'package:bekam/data/cubit/banner_cubit.dart';
 import 'package:bekam/data/cubit/category_cubit.dart';
+import 'package:bekam/data/cubit/latest_product_cubit.dart';
+import 'package:bekam/data/cubit/popular_product_cubit.dart';
 import 'package:bekam/data/repository/banner_repo.dart';
 import 'package:bekam/data/repository/categories_rpo.dart';
+import 'package:bekam/data/repository/product_repo.dart';
 import 'package:bekam/data/webServices/banner_webservices.dart';
 import 'package:bekam/data/webServices/category_webservices.dart';
+import 'package:bekam/data/webServices/product_webservices.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
@@ -28,8 +32,7 @@ void getItSetup() {
     ),
   );
 
-
- //! Banner
+  //! Banner
   getIt.registerLazySingleton<BannerCubit>(() => BannerCubit(getIt()));
   getIt.registerLazySingleton<BannerRepository>(
     () => BannerRepository(
@@ -41,6 +44,16 @@ void getItSetup() {
       getIt(),
     ),
   );
+
+  //!Popular+Latest products
+  getIt.registerLazySingleton<PopularProductCubit>(
+      () => PopularProductCubit(getIt()));
+  getIt.registerLazySingleton<LatestProductCubit>(
+      () => LatestProductCubit(getIt()));
+  getIt.registerLazySingleton<ProductRepository>(
+      () => ProductRepository(getIt()));
+  getIt.registerLazySingleton<ProductWebServices>(
+      () => ProductWebServices(getIt()));
 }
 
 Dio createAndSetupDio() {

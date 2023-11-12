@@ -37,7 +37,7 @@ class SearchRepository {
       //! neste retry mechanism
       if (response.retry == true) {
         return retrySearchMechanismPost(oldRetyrBody: response.toJson());
-      }    
+      }
       return ApiResult.success(response);
     } catch (error) {
       return ApiResult.failure(NetworkExceptions.getDioException(error));

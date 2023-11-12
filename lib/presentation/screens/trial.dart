@@ -1,9 +1,9 @@
-import 'package:bekam/data/cubit/banner_cubit.dart';
-import 'package:bekam/data/cubit/banner_state.dart';
-import 'package:bekam/data/cubit/category_cubit.dart';
-import 'package:bekam/data/cubit/category_state.dart';
-import 'package:bekam/data/model/banner_model.dart';
+
+import 'package:bekam/data/cubit/latest_product_cubit.dart';
+import 'package:bekam/data/cubit/latest_product_state.dart';
+
 import 'package:bekam/data/model/category_model.dart';
+import 'package:bekam/data/model/product_model.dart';
 import 'package:bekam/data/repository/network_exception.dart';
 
 import 'package:flutter/material.dart';
@@ -23,7 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    BlocProvider.of<BannerCubit>(context).getBaannerList();
+    BlocProvider.of<LatestProductCubit>(context).getLatestProductList(
+      limit: 12,
+      offset: "1",
+    );
   }
 
   @override
@@ -34,8 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          BlocBuilder<BannerCubit, BannerState<List<BannerModel>>>(
-            builder: (context, BannerState<List<BannerModel>> state) {
+          BlocBuilder<LatestProductCubit, LatestProductState<ProductModel>>(
+            builder: (context, LatestProductState<ProductModel> state) {
               return state.when(
                 idle: () {
                   return const Center(child: CircularProgressIndicator());
@@ -44,16 +47,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   return const Center(child: CircularProgressIndicator());
                 },
                 success: (bannerModel) {
-                  List<BannerModel> response = bannerModel;
+                  ProductModel response = bannerModel;
                   return SizedBox(
                     height: MediaQuery.sizeOf(context).height,
                     child: MasonryGridView.count(
-                      itemCount: response.length,
+                      itemCount: response.products!.length,
                       crossAxisCount: 2,
                       mainAxisSpacing: 4,
                       crossAxisSpacing: 4,
                       itemBuilder: (context, index) {
-                        return Text(response[index].title!);
+                        return Text(response.products![index].name!);
                       },
                     ),
                   );

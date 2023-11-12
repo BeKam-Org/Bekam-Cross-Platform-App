@@ -1,7 +1,9 @@
 // 🐦 Flutter imports:
 import 'package:bekam/data/cubit/banner_cubit.dart';
 import 'package:bekam/data/cubit/category_cubit.dart';
+import 'package:bekam/data/cubit/latest_product_cubit.dart';
 import 'package:bekam/data/cubit/logout_cubit.dart';
+import 'package:bekam/data/cubit/popular_product_cubit.dart';
 import 'package:bekam/data/cubit/user_verification_helper_cubit.dart';
 import 'package:bekam/data/injection.dart';
 import 'package:bekam/presentation/screens/trial.dart';
@@ -61,6 +63,12 @@ class MyApp extends StatelessWidget {
          BlocProvider<BannerCubit>(
           create: (context) => getIt<BannerCubit>(),
         ),
+        BlocProvider<PopularProductCubit>(
+          create: (context)=> getIt<PopularProductCubit>(),
+        ),
+         BlocProvider<LatestProductCubit>(
+          create: (context)=> getIt<LatestProductCubit>(),
+        )
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {

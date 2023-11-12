@@ -36,7 +36,7 @@ class _SearchResultPageState extends State<SearchResultPage> {
                   baseColor: Colors.grey.shade300,
                   highlightColor: Colors.grey.shade100,
                   enabled: true,
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.sizeOf(context).height ,
                     child: MasonryGridView.count(
                       itemCount: 50,
@@ -65,7 +65,7 @@ class _SearchResultPageState extends State<SearchResultPage> {
                   baseColor: Colors.grey.shade300,
                   highlightColor: Colors.grey.shade100,
                   enabled: true,
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.sizeOf(context).height ,
                     child: MasonryGridView.count(
                       itemCount: 50,
@@ -96,7 +96,7 @@ class _SearchResultPageState extends State<SearchResultPage> {
                   : searchResultModel.response!.length == 1
                       ? ProductWidget(
                           product: searchResultModel.response![0])
-                      : Container(
+                      : SizedBox(
                           height: MediaQuery.sizeOf(context).height ,
                           child: MasonryGridView.count(
                           crossAxisCount: 2,
