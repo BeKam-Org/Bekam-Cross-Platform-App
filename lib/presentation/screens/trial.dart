@@ -1,6 +1,8 @@
 
 import 'package:bekam/data/cubit/latest_product_cubit.dart';
 import 'package:bekam/data/cubit/latest_product_state.dart';
+import 'package:bekam/data/cubit/set_menu_cubit.dart';
+import 'package:bekam/data/cubit/set_menu_state.dart';
 
 import 'package:bekam/data/model/category_model.dart';
 import 'package:bekam/data/model/product_model.dart';
@@ -23,10 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    BlocProvider.of<LatestProductCubit>(context).getLatestProductList(
-      limit: 12,
-      offset: "1",
-    );
+    BlocProvider.of<SetMenuCubit>(context).getSetMenuList();
   }
 
   @override
@@ -37,8 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          BlocBuilder<LatestProductCubit, LatestProductState<ProductModel>>(
-            builder: (context, LatestProductState<ProductModel> state) {
+          BlocBuilder<SetMenuCubit, SetMenuState<List<Product>>>(
+            builder: (context, SetMenuState<List<Product>> state) {
               return state.when(
                 idle: () {
                   return const Center(child: CircularProgressIndicator());
@@ -47,16 +46,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   return const Center(child: CircularProgressIndicator());
                 },
                 success: (bannerModel) {
-                  ProductModel response = bannerModel;
+                 List<Product> response = bannerModel;
                   return SizedBox(
                     height: MediaQuery.sizeOf(context).height,
                     child: MasonryGridView.count(
-                      itemCount: response.products!.length,
+                      itemCount: response.length,
                       crossAxisCount: 2,
                       mainAxisSpacing: 4,
                       crossAxisSpacing: 4,
                       itemBuilder: (context, index) {
-                        return Text(response.products![index].name!);
+                        return Text(response[index].name!);
                       },
                     ),
                   );
