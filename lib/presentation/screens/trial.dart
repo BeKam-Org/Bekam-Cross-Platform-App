@@ -1,6 +1,3 @@
-
-import 'package:bekam/data/cubit/latest_product_cubit.dart';
-import 'package:bekam/data/cubit/latest_product_state.dart';
 import 'package:bekam/data/cubit/set_menu_cubit.dart';
 import 'package:bekam/data/cubit/set_menu_state.dart';
 
@@ -46,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   return const Center(child: CircularProgressIndicator());
                 },
                 success: (bannerModel) {
-                 List<Product> response = bannerModel;
+                  List<Product> response = bannerModel;
                   return SizedBox(
                     height: MediaQuery.sizeOf(context).height,
                     child: MasonryGridView.count(

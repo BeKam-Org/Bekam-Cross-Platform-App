@@ -13,6 +13,7 @@ import 'package:bekam/data/webServices/product_webservices.dart';
 import 'package:bekam/data/webServices/set_menu_webservices.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 final getIt = GetIt.instance;
 
@@ -68,8 +69,9 @@ void getItSetup() {
 
 Dio createAndSetupDio() {
   Dio dio = Dio();
+  dio.interceptors.add(PrettyDioLogger());
 
-  dio.interceptors.add(LogInterceptor(
+  dio.interceptors.add(PrettyDioLogger(
     responseBody: true,
     error: true,
     requestHeader: false,
