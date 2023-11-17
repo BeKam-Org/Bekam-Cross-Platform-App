@@ -1,3 +1,4 @@
+// 📦 Package imports:
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 /// Abstraction for checking internet connectivity

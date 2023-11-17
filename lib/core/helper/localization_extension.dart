@@ -1,3 +1,4 @@
+// 🌎 Project imports:
 import 'package:bekam/core/localization/app_localization.dart';
 
 /// Extension method to localize strings conveniently

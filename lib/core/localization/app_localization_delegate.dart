@@ -1,6 +1,9 @@
-import 'package:bekam/core/localization/app_localization.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
+import 'package:bekam/core/localization/app_localization.dart';
 
 /// A LocalizationsDelegate responsible for loading AppLocalization instances.
 /// This delegate is used to manage localization support for the app.

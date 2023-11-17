@@ -1,3 +1,4 @@
+// 🐦 Flutter imports:
 import 'package:flutter/foundation.dart';
 
 /// A simple logging utility class for controlling log output based on LogMode.

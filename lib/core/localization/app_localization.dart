@@ -1,8 +1,10 @@
+// 🐦 Flutter imports:
+import 'package:flutter/cupertino.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/helper/navigator_helper.dart';
 import 'package:bekam/core/localization/ar_ksa/ar_ksa_translations.dart';
-
 import 'en_us/en_us_translations.dart';
-import 'package:flutter/cupertino.dart';
 
 /// A class responsible for managing app localization based on the selected locale.
 class AppLocalization {
@@ -24,7 +26,7 @@ class AppLocalization {
   /// Returns the AppLocalization instance obtained from the current context.
   static AppLocalization of() {
     return Localizations.of<AppLocalization>(
-        NavigatorHelper.navigatorKey.currentContext!, AppLocalization)!;
+        NavigatorHelper.autoRouteNavigatorKey.currentContext!, AppLocalization)!;
   }
 
   
