@@ -1,2 +1,0 @@
-
-enum RegistrationType { login, signup }
