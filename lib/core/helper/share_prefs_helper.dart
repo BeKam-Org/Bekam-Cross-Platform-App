@@ -1,9 +1,5 @@
-//ignore: unused_import    
-
-// 🎯 Dart imports:
-import 'dart:convert';
-
 // 📦 Package imports:
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Utility class for managing preferences using SharedPreferences.
@@ -23,7 +19,9 @@ class PrefUtils {
   /// If SharedPreferences is not initialized, this method initializes it and prints a log message.
   Future<void> init() async {
     _sharedPreferences ??= await SharedPreferences.getInstance();
-    print('SharedPreference Initialized');
+    if (kDebugMode) {
+      print('SharedPreference Initialized');
+    }
   }
 
   /// Clears all the data stored in preferences.
