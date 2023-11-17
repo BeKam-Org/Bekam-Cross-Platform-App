@@ -42,8 +42,7 @@ class MyResponsiveHelper extends StatelessWidget {
   /// Checks if the current platform is a mobile phone.
   ///
   /// Returns [true] if the platform is not web, otherwise [false].
- 
-  static bool isMobilePhone() {
+  static bool isNotWeb() {
     if (!kIsWeb) {
       return true;
     } else {
