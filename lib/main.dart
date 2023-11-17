@@ -13,6 +13,7 @@ import 'package:bekam/core/localization/app_localization_delegate.dart';
 import 'package:bekam/core/router/auto_router.dart';
 import 'package:bekam/firebase_options.dart';
 
+// hello from the test branch to restaurant branch
 /// The main entry point for the Flutter application.
 void main() async {
   /// Sets the global observer for BLoC changes using MyBlocObserver.
