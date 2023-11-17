@@ -1,7 +1,6 @@
 library values;
 
 
-// 📦 Package imports:
 
 part 'colors.dart';
 part 'borders.dart';

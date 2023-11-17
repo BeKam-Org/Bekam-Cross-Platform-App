@@ -26,6 +26,10 @@ dependencies:
   firebase_core: ^2.22.0
   # state management package
   flutter_bloc: ^8.1.3
+  # cubit state generator using source_gen 
+  freezed: ^2.4.5
+  #Annotations for the freezed code-generator.
+  freezed_annotation: ^2.4.1
   # Dependency Injection helper
   get_it: ^7.6.4
   # Automatically organize your dart imports
@@ -34,7 +38,7 @@ dependencies:
   json_annotation: ^4.8.1
   # logs network calls in a pretty, easy to read format.
   pretty_dio_logger: ^1.3.1
-  #cubit state generator using source_gen 
+  #webservice [http requests with dio] generator using source_gen 
   retrofit: ^4.0.3
   # reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
   shared_preferences: ^2.2.2
