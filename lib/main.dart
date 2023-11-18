@@ -1,4 +1,5 @@
 // 🐦 Flutter imports:
+import 'package:bekam/presentation/screens/on_boarding/onboarding.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -39,7 +40,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appRouter = AppRouter();
-
+    // return MaterialApp(
+    //   home: OnBoardingPage(),
+    // );
     return MaterialApp.router(
       /// Title displayed in the operating system's task switcher.
       title: 'select.cheap',
@@ -68,7 +71,11 @@ class MyApp extends StatelessWidget {
       supportedLocales: const [
         Locale(
           'en',
+          '',
+        ),
+        Locale(
           'ar',
+          '',
         ),
       ],
     );
