@@ -1,4 +1,6 @@
 // 🐦 Flutter imports:
+import 'package:bekam/core/di/get_initializer.dart';
+import 'package:bekam/data/business_logic/set_menu/set_menu_get_cubit.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -16,6 +18,8 @@ import 'package:bekam/firebase_options.dart';
 // hello from the test branch to restaurant branch
 /// The main entry point for the Flutter application.
 void main() async {
+  setupGetIt();
+
   /// Sets the global observer for BLoC changes using MyBlocObserver.
   Bloc.observer = MyBlocObserver();
 
@@ -40,37 +44,48 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final appRouter = AppRouter();
 
-    return MaterialApp.router(
-      /// Title displayed in the operating system's task switcher.
-      title: 'select.cheap',
-
-      /// Controls the display of a banner at the top right of the app's UI in debug mode.
-      debugShowCheckedModeBanner: false,
-
-      /// Configures the app's localization support.
-      localizationsDelegates: const [
-        AppLocalizationDelegate(),
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<SetMenuGetCubit>(
+          create: (context) => getIt<SetMenuGetCubit>(),
+        )
       ],
+      child: MaterialApp.router(
+        /// Title displayed in the operating system's task switcher.
+        title: 'select.cheap',
 
-      /// Parses route information to route data.
-      routeInformationParser: appRouter.defaultRouteParser(),
+        /// Controls the display of a banner at the top right of the app's UI in debug mode.
+        debugShowCheckedModeBanner: false,
 
-      /// Customizes scrolling behavior using CustomScrollBehaviour.
-      scrollBehavior: CustomScrollBehaviour(),
+        /// Configures the app's localization support.
+        localizationsDelegates: const [
+          AppLocalizationDelegate(),
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
 
-      /// Delegates the routing handling to the appRouter.
-      routerDelegate: appRouter.delegate(),
+        /// Parses route information to route data.
+        routeInformationParser: appRouter.defaultRouteParser(),
 
-      /// Specifies the supported locales for the app.
-      supportedLocales: const [
-        Locale(
-          'en',
-          'ar',
-        ),
-      ],
+        /// Customizes scrolling behavior using CustomScrollBehaviour.
+        scrollBehavior: CustomScrollBehaviour(),
+
+        /// Delegates the routing handling to the appRouter.
+        routerDelegate: appRouter.delegate(),
+
+        /// Specifies the supported locales for the app.
+        supportedLocales: const [
+          Locale(
+            'en',
+            '',
+          ),
+          Locale(
+            'ar',
+            '',
+          ),
+        ],
+      ),
     );
   }
 }
