@@ -10,15 +10,15 @@ import 'package:bekam/presentation/widgets/onboarding/onboarding_item.dart';
 
 @RoutePage()
 class OnBoardingPage extends StatelessWidget {
-  OnBoardingPage({super.key});
+  const OnBoardingPage({super.key});
 
-  var onBoardingController = PageController();
-  final List<OnBoardingModel> onBoardingModels =
-      OnboardingRepository().getOnBoardingModels();
   @override
   Widget build(BuildContext context) {
+    PageController onBoardingController = PageController();
+    final List<OnBoardingModel> onBoardingModels =
+        OnboardingRepository().getOnBoardingModels();
+
     return Scaffold(
-      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
@@ -29,7 +29,7 @@ class OnBoardingPage extends StatelessWidget {
               flex: 3,
               child: PageView.builder(
                 controller: onBoardingController,
-                physics: BouncingScrollPhysics(),
+                physics: const BouncingScrollPhysics(),
                 itemCount: onBoardingModels.length,
                 itemBuilder: (context, index) {
                   return OnBoardingItem(
@@ -51,7 +51,7 @@ class OnBoardingPage extends StatelessWidget {
                       },
                       controller: onBoardingController,
                       count: onBoardingModels.length,
-                      effect: ExpandingDotsEffect(
+                      effect: const ExpandingDotsEffect(
                         dotHeight: 5,
                         activeDotColor: Color.fromRGBO(144, 168, 88, 1),
                       ),

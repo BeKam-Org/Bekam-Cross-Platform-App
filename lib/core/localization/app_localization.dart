@@ -2,7 +2,6 @@
 import 'package:flutter/cupertino.dart';
 
 // 🌎 Project imports:
-import 'package:bekam/core/helper/navigator_helper.dart';
 import 'package:bekam/core/localization/ar_ksa/ar_ksa_translations.dart';
 import 'en_us/en_us_translations.dart';
 

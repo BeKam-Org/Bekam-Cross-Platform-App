@@ -17,7 +17,7 @@ class OnBoardingItem extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             // margin: EdgeInsets.fromLTRB(0, 0, 0, 50),
-            padding: EdgeInsets.all(50),
+            padding: const EdgeInsets.all(50),
             child: Image.asset(
               onBoardingModel.imageUrl,
             ),

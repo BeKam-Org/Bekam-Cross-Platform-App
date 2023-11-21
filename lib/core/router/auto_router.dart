@@ -1,7 +1,6 @@
 // 📦 Package imports:
 import 'package:auto_route/auto_route.dart';
-import 'package:bekam/presentation/screens/on_boarding/onboarding.dart';
-import 'package:flutter/material.dart';
+
 
 // 🌎 Project imports:
 import 'auto_router.gr.dart';
