@@ -20,7 +20,7 @@ class CustomButton extends StatelessWidget {
             elevation: 0,
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-            backgroundColor: Color.fromRGBO(239, 159, 39, 1),
+            backgroundColor: Color.fromRGBO(144, 168, 88, 1),
             maximumSize: MediaQuery.sizeOf(context)),
         onPressed: onPressed,
         child: Text(

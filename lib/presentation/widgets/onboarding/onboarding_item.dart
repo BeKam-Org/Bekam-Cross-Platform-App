@@ -1,6 +1,7 @@
 import 'package:bekam/data/model/onboarding_model/onboarding_model.dart';
 import 'package:flutter/material.dart';
 
+/// This widget prefer to onBoarding item that show image , title , description by it .
 class OnBoardingItem extends StatelessWidget {
   OnBoardingItem({
     super.key,
@@ -15,7 +16,7 @@ class OnBoardingItem extends StatelessWidget {
         children: [
           Container(
             alignment: Alignment.center,
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 50),
+            // margin: EdgeInsets.fromLTRB(0, 0, 0, 50),
             padding: EdgeInsets.all(50),
             child: Image.asset(
               onBoardingModel.imageUrl,
