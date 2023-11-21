@@ -22,8 +22,8 @@ class OnBoardingPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.1,
             ),
             Expanded(
               flex: 3,
