@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 /// This widget prefer to onBoarding item that show image , title , description by it .
 class OnBoardingItem extends StatelessWidget {
-  OnBoardingItem({
+  const OnBoardingItem({
     super.key,
     required this.onBoardingModel,
   });
-  OnBoardingModel onBoardingModel;
+  final OnBoardingModel onBoardingModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,7 +16,6 @@ class OnBoardingItem extends StatelessWidget {
         children: [
           Container(
             alignment: Alignment.center,
-            // margin: EdgeInsets.fromLTRB(0, 0, 0, 50),
             padding: const EdgeInsets.all(50),
             child: Image.asset(
               onBoardingModel.imageUrl,

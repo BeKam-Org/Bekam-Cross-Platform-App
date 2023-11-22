@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:auto_route/auto_route.dart';
 import 'package:bekam/data/repository/onboarding/onboarding_repository.dart';
 import 'package:bekam/presentation/widgets/onboarding/custom_button.dart';
@@ -21,10 +20,8 @@ class OnBoardingPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.1,
-            ),
             Expanded(
               flex: 3,
               child: PageView.builder(
