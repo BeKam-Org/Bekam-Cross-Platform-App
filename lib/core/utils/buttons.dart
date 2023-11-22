@@ -22,7 +22,7 @@ class CustomButtonStyles {
 
   /// Button style for a filled button with an error container color background.
   static ButtonStyle get fillErrorContainer => ElevatedButton.styleFrom(
-        backgroundColor: colorScheme.errorContainer,
+        backgroundColor: Get.colorScheme.errorContainer,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.h),
         ),
@@ -70,12 +70,12 @@ class CustomButtonStyles {
 
   /// Button style for a filled button with the onPrimaryContainer color.
   static ButtonStyle get fillOnPrimaryContainer => ElevatedButton.styleFrom(
-        backgroundColor: colorScheme.onPrimaryContainer,
+        backgroundColor: Get.colorScheme.onPrimaryContainer,
       );
 
   /// Button style for a filled button with a primary color and a top-left radius of 12.
   static ButtonStyle get fillPrimaryTL12 => ElevatedButton.styleFrom(
-        backgroundColor: colorScheme.primary,
+        backgroundColor: Get.colorScheme.primary,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.h),
         ),
@@ -83,7 +83,7 @@ class CustomButtonStyles {
 
   /// Button style for a filled button with a primary color and a top-left radius of 15.
   static ButtonStyle get fillPrimaryTL15 => ElevatedButton.styleFrom(
-        backgroundColor: colorScheme.primary.withOpacity(0.53),
+        backgroundColor: Get.colorScheme.primary.withOpacity(0.53),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.h),
         ),
@@ -91,7 +91,7 @@ class CustomButtonStyles {
 
   /// Button style for a filled button with a primary color and a top-left radius of 30.
   static ButtonStyle get fillPrimaryTL30 => ElevatedButton.styleFrom(
-        backgroundColor: colorScheme.primary,
+        backgroundColor: Get.colorScheme.primary,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(
@@ -103,7 +103,7 @@ class CustomButtonStyles {
 
   /// Button style for a filled button with a primary color and a top-left radius of 8.
   static ButtonStyle get fillPrimaryTL8 => ElevatedButton.styleFrom(
-        backgroundColor: colorScheme.primary,
+        backgroundColor: Get.colorScheme.primary,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.h),
         ),

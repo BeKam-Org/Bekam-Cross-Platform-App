@@ -1,6 +1,5 @@
 part of values;
 
-
 /// A class that provides paths to global image assets used throughout the application.
 class GlobalAppImages {
   // Image folder path
@@ -22,5 +21,11 @@ class GlobalAppImages {
       '$imagePath/onBoarding/on_boarding_image3.svg';
 }
 
+/// A class that provides paths to global SVGs assets used throughout the application.
+class GlobalAppSVG {
+  // Image folder path
+  static String imagePath = 'assets/svg';
 
-class GlobalAppLottie {}
+  /// Path to the second location svg image.
+  static String locationSvg = '$imagePath/img_location_gray_400_01.svg';
+}

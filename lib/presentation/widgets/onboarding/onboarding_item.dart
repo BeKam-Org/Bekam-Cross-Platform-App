@@ -14,13 +14,11 @@ class OnBoardingItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
       child: Column(
         children: [
-          Container(
-            alignment: Alignment.center,
-            padding: const EdgeInsets.all(50),
-            child: Image.asset(
-              onBoardingModel.imageUrl,
-            ),
-          ),
+          // CustomImageView(
+          //   imagePath: ImageConstant.imgFrameDeepOrange50,
+          //   height: 305.adaptSize,
+          //   width: 305.adaptSize,
+          // ),
           Text(
             onBoardingModel.title,
             textAlign: TextAlign.center,

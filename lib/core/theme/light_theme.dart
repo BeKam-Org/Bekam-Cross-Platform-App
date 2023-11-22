@@ -21,7 +21,7 @@ ThemeData lightTheme = ThemeData(
   pageTransitionsTheme: CommonComponentsTheme.pageTransitionsTheme,
 
   /// The text theme used throughout the application.
-  textTheme: CommonComponentsTheme.textTheme(colorScheme),
+  textTheme: CommonComponentsTheme.textTheme(Get.colorScheme),
 
   /// The theme data for elevated buttons.
   elevatedButtonTheme: CommonComponentsTheme.elevatedButtonThemeData,

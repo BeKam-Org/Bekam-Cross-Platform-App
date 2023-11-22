@@ -2,17 +2,12 @@ part of app_theme;
 
 /// A class containing theme data for elevated buttons in the application.
 class ElevatedButtonThemes {
-  /// The color scheme used for elevated buttons.
-  ///
-  /// By default, it uses the primary color scheme from the `ColorSchemes` class.
-  static ColorScheme colorScheme = ColorSchemes.primaryColorScheme;
-
   /// Theme data for elevated buttons in the application.
   ///
   /// This includes the button's background color, shape, visual density, and padding.
   static ElevatedButtonThemeData elevatedButtonTheme =ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: colorScheme.primary,
+      backgroundColor: Get.colorScheme.primary,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.h),
       ),

@@ -16,5 +16,3 @@ part 'comon_theme_components/text_common_theme.dart';
 
 
 
-/// The color scheme used for the theme configuration.
-ColorScheme colorScheme = ColorSchemes.primaryColorScheme;

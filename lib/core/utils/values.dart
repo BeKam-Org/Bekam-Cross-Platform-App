@@ -17,7 +17,4 @@ part 'functions.dart';
 part 'strings.dart';
 part 'size_utils.dart';
 part 'buttons.dart';
-
-
-/// The color scheme used for the theme configuration.
-ColorScheme colorScheme = ColorSchemes.primaryColorScheme;
+part 'get.dart';

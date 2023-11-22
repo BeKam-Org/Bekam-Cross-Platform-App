@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:bekam/data/repository/onboarding/onboarding_repository.dart';
+import 'package:bekam/data/business_logic/onboarding/onboarding_vm.dart';
 import 'package:bekam/presentation/widgets/onboarding/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -15,7 +15,7 @@ class OnBoardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     PageController onBoardingController = PageController();
     final List<OnBoardingModel> onBoardingModels =
-        OnboardingRepository().getOnBoardingModels();
+        OnBoardingViewModel.getOnBoardingModels();
 
     return Scaffold(
       body: SafeArea(
