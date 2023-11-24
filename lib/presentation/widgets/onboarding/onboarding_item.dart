@@ -1,5 +1,9 @@
+import 'package:bekam/core/helper/localization_extension.dart';
+import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/data/model/onboarding_model/onboarding_model.dart';
+import 'package:bekam/presentation/common_widget/custom_image_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 /// This widget prefer to onBoarding item that show image , title , description by it .
 class OnBoardingItem extends StatelessWidget {
@@ -13,31 +17,33 @@ class OnBoardingItem extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // CustomImageView(
-          //   imagePath: ImageConstant.imgFrameDeepOrange50,
-          //   height: 305.adaptSize,
-          //   width: 305.adaptSize,
-          // ),
+          CustomImageView(
+            imagePath: onBoardingModel.imageUrl,
+            height: 350.myHeight,
+            width: 350.myHeight,
+          ),
           Text(
-            onBoardingModel.title,
+            "${onBoardingModel.title}".tr(context),
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontFamily: 'DM Sans',
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
+            style: Get.textTheme.headlineSmall,
+          ),
+          Container(
+            width: 273.myWidth,
+            margin: EdgeInsets.only(
+              left: 15.myWidth,
+              right: 18.myWidth,
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Text(
-            onBoardingModel.description,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontFamily: 'DM Sans',
-              fontSize: 14,
-              color: Color.fromRGBO(122, 134, 154, 1),
+            child: Text(
+              "${onBoardingModel.description}".tr(context),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+              style: CustomTextStyles.bodyMediumBluegray40001_3.copyWith(
+                fontSize: 20.fSize,
+                height: 2.myHeight,
+              ),
             ),
           ),
         ],

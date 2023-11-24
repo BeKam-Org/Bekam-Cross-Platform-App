@@ -8,7 +8,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillBlueGray => ElevatedButton.styleFrom(
         backgroundColor: GlobalAppColors.blueGray50,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12.h),
+          borderRadius: BorderRadius.circular(12.myWidth),
         ),
       );
 
@@ -16,7 +16,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillDeepOrange => ElevatedButton.styleFrom(
         backgroundColor: GlobalAppColors.primaryColor50.withOpacity(0.2),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.h),
+          borderRadius: BorderRadius.circular(10.myWidth),
         ),
       );
 
@@ -24,7 +24,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillErrorContainer => ElevatedButton.styleFrom(
         backgroundColor: Get.colorScheme.errorContainer,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15.h),
+          borderRadius: BorderRadius.circular(15.myWidth),
         ),
       );
 
@@ -32,7 +32,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillGray => ElevatedButton.styleFrom(
         backgroundColor: GlobalAppColors.gray100,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15.h),
+          borderRadius: BorderRadius.circular(15.myWidth),
         ),
       );
 
@@ -42,7 +42,7 @@ class CustomButtonStyles {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(
-              30.h,
+              30.myWidth,
             ),
           ),
         ),
@@ -52,7 +52,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillGrayTL12 => ElevatedButton.styleFrom(
         backgroundColor: GlobalAppColors.gray100,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12.h),
+          borderRadius: BorderRadius.circular(12.myWidth),
         ),
       );
 
@@ -62,7 +62,7 @@ class CustomButtonStyles {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(
-              30.h,
+              30.myWidth,
             ),
           ),
         ),
@@ -77,7 +77,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillPrimaryTL12 => ElevatedButton.styleFrom(
         backgroundColor: Get.colorScheme.primary,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12.h),
+          borderRadius: BorderRadius.circular(12.myWidth),
         ),
       );
 
@@ -85,7 +85,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillPrimaryTL15 => ElevatedButton.styleFrom(
         backgroundColor: Get.colorScheme.primary.withOpacity(0.53),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15.h),
+          borderRadius: BorderRadius.circular(15.myWidth),
         ),
       );
 
@@ -95,7 +95,7 @@ class CustomButtonStyles {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(
-              30.h,
+              30.myWidth,
             ),
           ),
         ),
@@ -105,7 +105,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillPrimaryTL8 => ElevatedButton.styleFrom(
         backgroundColor: Get.colorScheme.primary,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8.h),
+          borderRadius: BorderRadius.circular(8.myWidth),
         ),
       );
 

@@ -1,5 +1,6 @@
 import 'package:bekam/core/utils/values.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 /// A custom app bar widget with customizable parameters.
 ///
@@ -47,7 +48,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       elevation: 0,
-      toolbarHeight: height ?? 24.v,
+      toolbarHeight: height ?? 24.myHeight,
       automaticallyImplyLeading: false,
       backgroundColor: Colors.transparent,
       leadingWidth: leadingWidth ?? 0,
@@ -61,7 +62,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Size get preferredSize => Size(
-        mediaQueryData.size.width,
-        height ?? 24.v,
+        ScreenUtil().screenWidth,
+        height ?? 24.myHeight,
       );
 }

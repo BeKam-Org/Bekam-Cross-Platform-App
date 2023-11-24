@@ -12,5 +12,8 @@ final Map<String, String> arKsa = {
   
   // 3 - Onboarding Screen
   "msg_24k_restaurants": "+24 ألف مطعم",
-  "msg_easily_find_your": "ابحث بسهولة عن طعامك المفضل واحصل عليه في وقت قياسي."
+  "msg_easily_find_your": "ابحث بسهولة عن طعامك المفضل واحصل عليه في وقت قياسي.",
+
+  //common strings
+  "lbl_get_started": "ابدأ",
 };

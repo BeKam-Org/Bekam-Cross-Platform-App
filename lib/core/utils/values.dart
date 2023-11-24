@@ -4,6 +4,8 @@ import 'package:bekam/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 part 'colors.dart';
 part 'borders.dart';
 part 'images.dart';

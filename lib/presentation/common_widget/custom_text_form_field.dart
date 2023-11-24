@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// This widget includes features such as autofocus, prefix and suffix icons, hint text,
 /// validation, and the ability to obscure text. It also supports various styling options.
 class CustomTextFormField extends StatelessWidget {
-   /// Creates a [CustomTextFormField] instance.
+  /// Creates a [CustomTextFormField] instance.
   ///
   /// The [alignment] parameter specifies the alignment of the text form field.
   /// The [width] parameter specifies the width of the text form field.
@@ -55,6 +55,7 @@ class CustomTextFormField extends StatelessWidget {
   }) : super(
           key: key,
         );
+
   /// The alignment of the text form field.
   final Alignment? alignment;
 
@@ -150,22 +151,22 @@ class CustomTextFormField extends StatelessWidget {
         suffixIcon: suffix,
         suffixIconConstraints: suffixConstraints,
         isDense: true,
-        contentPadding: contentPadding ?? EdgeInsets.all(12.h),
+        contentPadding: contentPadding ?? EdgeInsets.all(12.myWidth),
         fillColor: fillColor ?? GlobalAppColors.gray100,
         filled: filled,
         border: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(15.h),
+              borderRadius: BorderRadius.circular(15.myWidth),
               borderSide: BorderSide.none,
             ),
         enabledBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(15.h),
+              borderRadius: BorderRadius.circular(15.myWidth),
               borderSide: BorderSide.none,
             ),
         focusedBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(15.h),
+              borderRadius: BorderRadius.circular(15.myWidth),
               borderSide: BorderSide.none,
             ),
       );
@@ -176,7 +177,7 @@ extension TextFormFieldStyleHelper on CustomTextFormField {
   static OutlineInputBorder get fillGrayTL30 => OutlineInputBorder(
         borderRadius: BorderRadius.vertical(
           top: Radius.circular(
-            30.h,
+            30.myWidth,
           ),
         ),
         borderSide: BorderSide.none,

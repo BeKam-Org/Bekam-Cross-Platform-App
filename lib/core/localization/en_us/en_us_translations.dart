@@ -14,4 +14,7 @@ final Map<String, String> enUs = {
   "msg_24k_restaurants": "+24K Restaurants",
   "msg_easily_find_your":
       "Easily find your favorite food and have it delivered in record time.",
+
+  //common strings
+  "lbl_get_started": "Get started",
 };

@@ -7,7 +7,6 @@ class CustomScrollBehaviour extends MaterialScrollBehavior {
   @override
   Set<PointerDeviceKind> get dragDevices => {
         /// Specifies the pointer device kinds allowed for scrolling.
-
         PointerDeviceKind.touch,
         PointerDeviceKind.mouse,
         PointerDeviceKind.unknown

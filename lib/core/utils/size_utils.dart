@@ -1,8 +1,8 @@
 part of values;
 // This functions are responsible to make UI responsive across all the mobile devices.
 
-/// Global [MediaQueryData] instance created from the window's view.
-MediaQueryData mediaQueryData = MediaQueryData.fromView(ui.window);
+// /// Global [MediaQueryData] instance created from the window's view.
+// MediaQueryData mediaQueryData = MediaQueryData.fromView(ui.window);
 
 // These are the Viewport values of your Figma Design.
 // These are used in the code as a reference to create your UI Responsively.
@@ -14,27 +14,28 @@ const num figmaDesignStatusBar = 0;
 extension ResponsiveExtension on num {
   /// This method is used to get device viewport width.
   get _width {
-    return mediaQueryData.size.width;
+    return ScreenUtil().screenWidth;
   }
 
   /// This method is used to get device viewport height.
   get _height {
-    num statusBar = mediaQueryData.viewPadding.top;
-    num bottomBar = mediaQueryData.viewPadding.bottom;
-    num screenHeight = mediaQueryData.size.height - statusBar - bottomBar;
+    num statusBar = ScreenUtil().statusBarHeight;
+    num bottomBar = ScreenUtil().bottomBarHeight;
+    num screenHeight = ScreenUtil().screenHeight - statusBar - bottomBar;
     return screenHeight;
   }
 
   /// This method is used to set padding/margin (for the left and Right side) & width of the screen or widget according to the Viewport width.
-  double get h => ((this * _width) / figmaDesignWidth);
+  double get myWidth => ((this * _width) / figmaDesignWidth);
 
   /// This method is used to set padding/margin (for the top and bottom side) & height of the screen or widget according to the Viewport height.
-  double get v => (this * _height) / (figmaDesignHeight - figmaDesignStatusBar);
+  double get myHeight =>
+      (this * _height) / (figmaDesignHeight - figmaDesignStatusBar);
 
   /// This method is used to set the smallest px in image height and width.
   double get adaptSize {
-    var height = v;
-    var width = h;
+    var height = myHeight;
+    var width = myWidth;
     return height < width ? height.toDoubleValue() : width.toDoubleValue();
   }
 

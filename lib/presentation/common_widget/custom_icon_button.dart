@@ -69,7 +69,7 @@ class CustomIconButton extends StatelessWidget {
             decoration: decoration ??
                 BoxDecoration(
                   color: GlobalAppColors.amber10001,
-                  borderRadius: BorderRadius.circular(20.h),
+                  borderRadius: BorderRadius.circular(20.myWidth),
                 ),
             child: child,
           ),
@@ -83,19 +83,19 @@ extension IconButtonStyleHelper on CustomIconButton {
   /// A decoration style for filling the button with yellow color and a specific opacity.
   static BoxDecoration get fillYellow => BoxDecoration(
         color: GlobalAppColors.yellow800.withOpacity(0.8),
-        borderRadius: BorderRadius.circular(12.h),
+        borderRadius: BorderRadius.circular(12.myWidth),
       );
 
   /// A decoration style for filling the button with teal color.
   static BoxDecoration get fillTeal => BoxDecoration(
         color: GlobalAppColors.teal400,
-        borderRadius: BorderRadius.circular(20.h),
+        borderRadius: BorderRadius.circular(20.myWidth),
       );
 
   /// A decoration style for filling the button with yellow color and a specific opacity,
   /// with a larger border radius.
   static BoxDecoration get fillYellowTL20 => BoxDecoration(
         color: GlobalAppColors.yellow800.withOpacity(0.5),
-        borderRadius: BorderRadius.circular(20.h),
+        borderRadius: BorderRadius.circular(20.myWidth),
       );
 }

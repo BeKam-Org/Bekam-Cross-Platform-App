@@ -117,7 +117,7 @@ class GlobalAppDecoration {
   static BoxDecoration get outlineGray => BoxDecoration(
         border: Border.all(
           color: GlobalAppColors.gray100,
-          width: 1.h,
+          width: 1.myWidth,
         ),
       );
 
@@ -127,8 +127,8 @@ class GlobalAppDecoration {
         boxShadow: [
           BoxShadow(
             color: GlobalAppColors.gray90021,
-            spreadRadius: 2.h,
-            blurRadius: 2.h,
+            spreadRadius: 2.myWidth,
+            blurRadius: 2.myWidth,
             offset: const Offset(
               0,
               7,
@@ -143,8 +143,8 @@ class GlobalAppDecoration {
         boxShadow: [
           BoxShadow(
             color: GlobalAppColors.gray90021,
-            spreadRadius: 2.h,
-            blurRadius: 2.h,
+            spreadRadius: 2.myWidth,
+            blurRadius: 2.myWidth,
             offset: const Offset(
               0,
               7,
