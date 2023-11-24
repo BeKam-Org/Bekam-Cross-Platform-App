@@ -1,9 +1,4 @@
-// 🐦 Flutter imports:
-import 'package:flutter/material.dart';
-
-// 🌎 Project imports:
-import 'package:bekam/core/utils/values.dart';
-
+part of app_theme;
 /// A class containing theme data for elevated buttons in the application.
 class ElevatedButtonThemes {
   /// Theme data for elevated buttons in the application.

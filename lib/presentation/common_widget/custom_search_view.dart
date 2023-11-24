@@ -150,30 +150,30 @@ class CustomSearchView extends StatelessWidget {
         prefixIcon: prefix ??
             Container(
               margin: EdgeInsets.symmetric(
-                horizontal: 12.myWidth,
-                vertical: 10.myHeight,
+                horizontal:  GlobalAppSizes.s_12.myWidth,
+                vertical:  GlobalAppSizes.s_10.myHeight,
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.vertical(
                   bottom: Radius.circular(
-                    30.myWidth,
+                     GlobalAppSizes.s_30.myWidth,
                   ),
                 ),
               ),
               child: CustomImageView(
                 imagePath: GlobalAppSVG.locationSvg,
-                height: 24.adaptSize,
-                width: 24.adaptSize,
+                height:  GlobalAppSizes.s_24.adaptSize,
+                width:  GlobalAppSizes.s_24.adaptSize,
               ),
             ),
         prefixIconConstraints: prefixConstraints ??
             BoxConstraints(
-              maxHeight: 44.myHeight,
+              maxHeight:  GlobalAppSizes.s_44.myHeight,
             ),
         suffixIcon: suffix ??
             Padding(
               padding: EdgeInsets.only(
-                right: 15.myWidth,
+                right:  GlobalAppSizes.s_15.myWidth,
               ),
               child: IconButton(
                 onPressed: () => controller!.clear(),
@@ -185,14 +185,14 @@ class CustomSearchView extends StatelessWidget {
             ),
         suffixIconConstraints: suffixConstraints ??
             BoxConstraints(
-              maxHeight: 44.myHeight,
+              maxHeight:  GlobalAppSizes.s_44.myHeight,
             ),
         isDense: true,
         contentPadding: contentPadding ??
             EdgeInsets.only(
-              top: 12.myHeight,
-              right: 12.myWidth,
-              bottom: 12.myHeight,
+              top:  GlobalAppSizes.s_12.myHeight,
+              right:  GlobalAppSizes.s_12.myWidth,
+              bottom:  GlobalAppSizes.s_12.myHeight,
             ),
         fillColor: fillColor ?? GlobalAppColors.gray100,
         filled: filled,
@@ -200,7 +200,7 @@ class CustomSearchView extends StatelessWidget {
             OutlineInputBorder(
               borderRadius: BorderRadius.vertical(
                 bottom: Radius.circular(
-                  30.myWidth,
+                   GlobalAppSizes.s_30.myWidth,
                 ),
               ),
               borderSide: BorderSide.none,
@@ -209,7 +209,7 @@ class CustomSearchView extends StatelessWidget {
             OutlineInputBorder(
               borderRadius: BorderRadius.vertical(
                 bottom: Radius.circular(
-                  30.myWidth,
+                   GlobalAppSizes.s_30.myWidth,
                 ),
               ),
               borderSide: BorderSide.none,
@@ -218,7 +218,7 @@ class CustomSearchView extends StatelessWidget {
             OutlineInputBorder(
               borderRadius: BorderRadius.vertical(
                 bottom: Radius.circular(
-                  30.myWidth,
+                   GlobalAppSizes.s_30.myWidth,
                 ),
               ),
               borderSide: BorderSide.none,

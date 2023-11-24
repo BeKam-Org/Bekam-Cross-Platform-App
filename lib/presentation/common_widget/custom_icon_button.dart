@@ -61,8 +61,8 @@ class CustomIconButton extends StatelessWidget {
   }
 
   Widget get iconButtonWidget => SizedBox(
-        height: height ?? 0,
-        width: width ?? 0,
+        height: height ??  GlobalAppSizes.s_0,
+        width: width ??  GlobalAppSizes.s_0,
         child: IconButton(
           padding: EdgeInsets.zero,
           icon: Container(

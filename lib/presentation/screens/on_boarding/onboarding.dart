@@ -29,8 +29,8 @@ class OnBoardingPage extends StatelessWidget {
           height: MediaQuery.sizeOf(context).height,
           width: double.maxFinite,
           padding: EdgeInsets.symmetric(
-            horizontal: 20.myWidth,
-            vertical: 20.myHeight,
+            horizontal: GlobalAppSizes.s_20.myWidth,
+            vertical: GlobalAppSizes.s_20.myHeight,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -57,15 +57,15 @@ class OnBoardingPage extends StatelessWidget {
                     controller: onBoardingController,
                     count: onBoardingModels.length,
                     effect: const ExpandingDotsEffect(
-                      dotHeight: 5,
-                      activeDotColor: Color.fromRGBO(144, 168, 88, 1),
+                      dotHeight:  GlobalAppSizes.s_5,
+                      activeDotColor: GlobalAppColors.primaryColor,
                     ),
                   ),
                   SizedBox(height: 50.myHeight),
                   CustomElevatedButton(
                     text: "lbl_get_started".tr(context),
                   ),
-                  SizedBox(height: 5.myHeight),
+                  SizedBox(height:  GlobalAppSizes.s_5.myHeight),
                 ],
               ),
             ],

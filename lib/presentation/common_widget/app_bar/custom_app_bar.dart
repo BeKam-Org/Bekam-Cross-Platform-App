@@ -52,14 +52,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      elevation: 0,
-      toolbarHeight: height ?? 24.myHeight,
+      elevation:  GlobalAppSizes.s_0,
+      toolbarHeight: height ??  GlobalAppSizes.s_24.myHeight,
       automaticallyImplyLeading: false,
       backgroundColor: Colors.transparent,
-      leadingWidth: leadingWidth ?? 0,
+      leadingWidth: leadingWidth ??  GlobalAppSizes.s_0,
       leading: leading,
       title: title,
-      titleSpacing: 0,
+      titleSpacing:  GlobalAppSizes.s_0,
       centerTitle: centerTitle ?? false,
       actions: actions,
     );

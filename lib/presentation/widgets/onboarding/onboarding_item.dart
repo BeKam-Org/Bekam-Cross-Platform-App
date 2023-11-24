@@ -23,31 +23,28 @@ class OnBoardingItem extends StatelessWidget {
         children: [
           CustomImageView(
             imagePath: onBoardingModel.imageUrl,
-            height: 350.myHeight,
-            width: 350.myHeight,
+            height: GlobalAppSizes.s_350.myHeight,
+            width: GlobalAppSizes.s_350.myHeight,
           ),
-          Text(
-            "${onBoardingModel.title}".tr(context),
-            textAlign: TextAlign.center,
-            style: Get.textTheme.headlineSmall,
-          ),
-          Container(
-            width: 273.myWidth,
-            margin: EdgeInsets.only(
-              left: 15.myWidth,
-              right: 18.myWidth,
-            ),
-            child: Text(
-              "${onBoardingModel.description}".tr(context),
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.center,
-              style: CustomTextStyles.bodyMediumBluegray40001_3.copyWith(
-                fontSize: 20.fSize,
-                height: 2.myHeight,
+          Column(
+            children: [
+              Text(
+                "${onBoardingModel.title}".tr(context),
+                textAlign: TextAlign.center,
+                style: Get.textTheme.headlineSmall!.copyWith(                ),
               ),
-            ),
-          ),
+              SizedBox(
+                height: GlobalAppSizes.s_10.myHeight,
+              ),
+              Text(
+                "${onBoardingModel.description}".tr(context),
+                maxLines: GlobalAppSizes.s_3.toInt(),
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
+                style: CustomTextStyles.bodyMediumBluegray40001_3.copyWith(),
+              ),
+            ],
+          )
         ],
       ),
     );

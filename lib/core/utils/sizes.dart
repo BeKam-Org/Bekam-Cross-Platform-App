@@ -20,9 +20,11 @@ class GlobalAppSizes {
   static const double s_16 = 16.0;
 
   static const double s_20 = 20.0;
+  static const double s_24 = 24.0;
   static const double s_25 = 25.0;
   static const double s_30 = 30.0;
   static const double s_40 = 40.0;
+  static const double s_44 = 44.0;
   static const double s_45 = 45.0;
   static const double s_50 = 50.0;
   static const double s_60 = 60.0;
@@ -34,5 +36,7 @@ class GlobalAppSizes {
   static const double s_150 = 150.0;
   static const double s_200 = 200.0;
   static const double s_220 = 220.0;
+  static const double s_273 = 273.0;
   static const double s_300 = 300.0;
+  static const double s_350 = 350.0;
 }

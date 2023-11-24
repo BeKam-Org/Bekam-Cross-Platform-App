@@ -4,6 +4,7 @@
 import 'dart:io';
 
 // 🐦 Flutter imports:
+import 'package:bekam/core/utils/values.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -137,8 +138,8 @@ class CustomImageView extends StatelessWidget {
             imageUrl: imagePath!,
             color: color,
             placeholder: (context, url) => SizedBox(
-              height: 30,
-              width: 30,
+              height:  GlobalAppSizes.s_30,
+              width:  GlobalAppSizes.s_30,
               child: LinearProgressIndicator(
                 color: Colors.grey.shade200,
                 backgroundColor: Colors.grey.shade100,

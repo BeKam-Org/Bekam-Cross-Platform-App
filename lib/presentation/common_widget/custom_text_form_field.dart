@@ -180,7 +180,7 @@ extension TextFormFieldStyleHelper on CustomTextFormField {
   static OutlineInputBorder get fillGrayTL30 => OutlineInputBorder(
         borderRadius: BorderRadius.vertical(
           top: Radius.circular(
-            30.myWidth,
+             GlobalAppSizes.s_30.myWidth,
           ),
         ),
         borderSide: BorderSide.none,

@@ -151,8 +151,8 @@ class CustomRadioButton extends StatelessWidget {
       width: iconSize,
       child: Radio<String>(
         visualDensity: const VisualDensity(
-          vertical: -4,
-          horizontal: -4,
+          vertical: - GlobalAppSizes.s_4,
+          horizontal: - GlobalAppSizes.s_4,
         ),
         value: value,
         groupValue: groupValue,

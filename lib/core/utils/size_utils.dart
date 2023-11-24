@@ -40,7 +40,7 @@ extension ResponsiveExtension on num {
   }
 
   /// This method is used to set text font size according to Viewport.
-  double get fSize => adaptSize;
+  double get fSize => ScreenUtil().setSp(this);
 }
 
 /// Extension for formatting [double] values.
