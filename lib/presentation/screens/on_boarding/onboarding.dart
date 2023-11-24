@@ -13,13 +13,17 @@ import 'package:bekam/data/model/onboarding_model/onboarding_model.dart';
 import 'package:bekam/presentation/common_widget/custom_elevated_button.dart';
 import 'package:bekam/presentation/widgets/onboarding/onboarding_item.dart';
 
+/// Widget representing the onboarding screen for the application.
 @RoutePage()
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // Controller for managing the onboarding page view.
     PageController onBoardingController = PageController();
+
+    // List of onboarding models to display in the page view.
     final List<OnBoardingModel> onBoardingModels =
         OnBoardingViewModel.getOnBoardingModels();
 
@@ -35,6 +39,7 @@ class OnBoardingPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // Expanded PageView for onboarding screens.
               Expanded(
                 child: PageView.builder(
                   controller: onBoardingController,
@@ -48,8 +53,10 @@ class OnBoardingPage extends StatelessWidget {
                   onPageChanged: (value) {},
                 ),
               ),
+              // Indicator dots and Get Started button.
               Column(
                 children: [
+                  // SmoothPageIndicator for displaying dots indicating the current page.
                   SmoothPageIndicator(
                     onDotClicked: (index) {
                       onBoardingController.jumpToPage(index);
@@ -57,15 +64,16 @@ class OnBoardingPage extends StatelessWidget {
                     controller: onBoardingController,
                     count: onBoardingModels.length,
                     effect: const ExpandingDotsEffect(
-                      dotHeight:  GlobalAppSizes.s_5,
+                      dotHeight: GlobalAppSizes.s_5,
                       activeDotColor: GlobalAppColors.primaryColor,
                     ),
                   ),
                   SizedBox(height: 50.myHeight),
+                  // CustomElevatedButton for the Get Started button.
                   CustomElevatedButton(
                     text: "lbl_get_started".tr(context),
                   ),
-                  SizedBox(height:  GlobalAppSizes.s_5.myHeight),
+                  SizedBox(height: GlobalAppSizes.s_5.myHeight),
                 ],
               ),
             ],

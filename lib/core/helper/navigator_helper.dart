@@ -1,8 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
-// 📦 Package imports:
-import 'package:auto_route/auto_route.dart';
 
 /// Helper class for managing navigation operations within the app using the Navigator widget
 class NavigatorHelper {

@@ -1,4 +1,5 @@
 // 🐦 Flutter imports:
+import 'package:bekam/core/helper/share_prefs_helper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,11 @@ import 'package:bekam/select_cheap.dart';
 
 /// The main entry point for the Flutter application.
 void main() async {
+  /// Setup dependency injection using GetIt.
   setupGetIt();
+
+  /// Initialize SharedPreferences.
+  await getIt<PrefUtils>().init();
 
   /// Sets the global observer for BLoC changes using MyBlocObserver.
   Bloc.observer = MyBlocObserver();

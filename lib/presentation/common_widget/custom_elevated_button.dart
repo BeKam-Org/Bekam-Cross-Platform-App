@@ -94,6 +94,3 @@ class CustomElevatedButton extends BaseButton {
         ),
       );
 }
-
-mixin v {
-}

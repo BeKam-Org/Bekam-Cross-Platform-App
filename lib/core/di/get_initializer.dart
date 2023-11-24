@@ -1,5 +1,7 @@
 // 📦 Package imports:
+import 'package:bekam/core/helper/share_prefs_helper.dart';
 import 'package:bekam/core/router/auto_router.dart';
+import 'package:bekam/data/business_logic/theme/theme_cubit.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
@@ -24,6 +26,9 @@ final getIt = GetIt.instance;
 
 /// A function to set up dependency injection using GetIt.
 void setupGetIt() {
+  // Register shared preferences
+  getIt.registerLazySingleton<PrefUtils>(() => PrefUtils());
+
   // Register app router
   getIt.registerSingleton<AppRouter>(AppRouter());
 
@@ -63,4 +68,7 @@ void setupGetIt() {
   getIt.registerLazySingleton<SetMenuRepository>(
       () => SetMenuRepository(getIt(), getIt()));
   getIt.registerLazySingleton<SetMenuGetCubit>(() => SetMenuGetCubit(getIt()));
+
+  // theme cubit
+  getIt.registerLazySingleton<ThemeCubit>(() => ThemeCubit(getIt()));
 }

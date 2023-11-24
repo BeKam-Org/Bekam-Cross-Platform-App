@@ -6,13 +6,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 /// Utility class for managing preferences using SharedPreferences.
 class PrefUtils {
-  static SharedPreferences? _sharedPreferences;
+   SharedPreferences? sharedPreferences;
 
   /// Constructor to initialize SharedPreferences instance.
   PrefUtils() {
     // init();
     SharedPreferences.getInstance().then((value) {
-      _sharedPreferences = value;
+      sharedPreferences = value;
     });
   }
 
@@ -20,7 +20,7 @@ class PrefUtils {
   ///
   /// If SharedPreferences is not initialized, this method initializes it and prints a log message.
   Future<void> init() async {
-    _sharedPreferences ??= await SharedPreferences.getInstance();
+    sharedPreferences ??= await SharedPreferences.getInstance();
     if (kDebugMode) {
       print('SharedPreference Initialized');
     }
@@ -28,7 +28,7 @@ class PrefUtils {
 
   /// Clears all the data stored in preferences.
   void clearPreferencesData() async {
-    _sharedPreferences!.clear();
+    sharedPreferences!.clear();
   }
 
 }
