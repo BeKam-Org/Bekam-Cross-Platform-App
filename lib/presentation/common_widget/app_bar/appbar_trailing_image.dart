@@ -1,6 +1,9 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/presentation/common_widget/custom_image_view.dart';
-import 'package:flutter/material.dart';
 
 /// A custom widget for displaying an image in the app bar as a trailing icon.
 ///

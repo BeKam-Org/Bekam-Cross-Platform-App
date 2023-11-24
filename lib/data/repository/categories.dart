@@ -1,8 +1,11 @@
+// 📦 Package imports:
+import 'package:dio/dio.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/data/model/api_result/api_result.dart';
 import 'package:bekam/data/model/category_model/category_model.dart';
 import 'package:bekam/data/model/network_exception/network_exception.dart';
 import 'package:bekam/data/web_services/get.dart';
-import 'package:dio/dio.dart';
 
 /// Repository class responsible for handling Category-related data operations.
 ///

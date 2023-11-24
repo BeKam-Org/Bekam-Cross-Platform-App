@@ -1,8 +1,11 @@
+// 📦 Package imports:
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/data/business_logic/category/category_get_state.dart';
 import 'package:bekam/data/model/category_model/category_model.dart';
 import 'package:bekam/data/model/network_exception/network_exception.dart';
 import 'package:bekam/data/repository/categories.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 /// A [Cubit] responsible for managing the state of category data fetching.
 ///

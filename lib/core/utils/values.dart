@@ -1,10 +1,13 @@
 library values;
 
-import 'package:bekam/core/theme/theme.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-import 'dart:ui' as ui;
 
+// 📦 Package imports:
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+// 🌎 Project imports:
+import 'package:bekam/core/theme/theme.dart';
 
 part 'colors.dart';
 part 'borders.dart';

@@ -1,6 +1,8 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
 // 🌎 Project imports:
 import 'package:bekam/core/localization/app_localization.dart';
-import 'package:flutter/material.dart';
 
 /// Extension method to localize strings conveniently
 extension LocalizationExtension on String {

@@ -1,7 +1,11 @@
+// 🎯 Dart imports:
 import 'dart:io';
 
-import 'package:dio/dio.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+
+// 📦 Package imports:
+import 'package:dio/dio.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'network_exception.freezed.dart';

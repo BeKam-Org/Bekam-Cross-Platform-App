@@ -2,6 +2,8 @@
 import 'package:dio/dio.dart'; // Dio is a powerful HTTP client for Dart
 
 // Importing PrettyDioLogger for logging HTTP requests and responses in a readable format
+
+// 📦 Package imports:
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 // Function to create and set up a Dio instance with PrettyDioLogger

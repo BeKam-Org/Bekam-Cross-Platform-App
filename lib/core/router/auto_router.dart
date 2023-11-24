@@ -1,7 +1,6 @@
 // 📦 Package imports:
 import 'package:auto_route/auto_route.dart';
 
-
 // 🌎 Project imports:
 import 'auto_router.gr.dart';
 

@@ -1,3 +1,8 @@
+// 📦 Package imports:
+import 'package:dio/dio.dart';
+import 'package:get_it/get_it.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/networking/dio.dart';
 import 'package:bekam/data/business_logic/banner/banner_get_cubit.dart';
 import 'package:bekam/data/business_logic/category/category_get_cubit.dart';
@@ -13,8 +18,6 @@ import 'package:bekam/data/web_services/delete.dart';
 import 'package:bekam/data/web_services/dio_factory.dart';
 import 'package:bekam/data/web_services/get.dart';
 import 'package:bekam/data/web_services/put.dart';
-import 'package:dio/dio.dart';
-import 'package:get_it/get_it.dart';
 
 final getIt = GetIt.instance;
 

@@ -1,13 +1,18 @@
 
 
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
+// 📦 Package imports:
 import 'package:auto_route/annotations.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/data/business_logic/set_menu/set_menu_get_cubit.dart';
 import 'package:bekam/data/business_logic/set_menu/set_menu_get_state.dart';
 import 'package:bekam/data/model/network_exception/network_exception.dart';
 import 'package:bekam/data/model/product_model/product_model.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 @RoutePage()
 class HomeScreen extends StatefulWidget {

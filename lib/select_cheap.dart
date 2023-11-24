@@ -1,18 +1,17 @@
 // 🐦 Flutter imports:
-import 'package:bekam/core/di/get_initializer.dart';
-import 'package:bekam/data/business_logic/set_menu/set_menu_get_cubit.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // 🌎 Project imports:
+import 'package:bekam/core/di/get_initializer.dart';
 import 'package:bekam/core/helper/custom_scroll_behaviour.dart';
 import 'package:bekam/core/localization/app_localization_delegate.dart';
 import 'package:bekam/core/router/auto_router.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:bekam/data/business_logic/set_menu/set_menu_get_cubit.dart';
 
 /// The root widget for the application.
 class SelectCheapApp extends StatelessWidget {

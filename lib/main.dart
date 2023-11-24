@@ -1,17 +1,17 @@
 // 🐦 Flutter imports:
-import 'package:bekam/core/di/get_initializer.dart';
-import 'package:bekam/select_cheap.dart';
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
+import 'package:device_preview/device_preview.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 // 🌎 Project imports:
 import 'package:bekam/core/bloc_observer/bloc_observer.dart';
+import 'package:bekam/core/di/get_initializer.dart';
 import 'package:bekam/firebase_options.dart';
+import 'package:bekam/select_cheap.dart';
 
 /// The main entry point for the Flutter application.
 void main() async {

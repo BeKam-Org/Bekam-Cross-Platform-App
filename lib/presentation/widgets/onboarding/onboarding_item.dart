@@ -1,8 +1,11 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/helper/localization_extension.dart';
 import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/data/model/onboarding_model/onboarding_model.dart';
 import 'package:bekam/presentation/common_widget/custom_image_view.dart';
-import 'package:flutter/material.dart';
 
 /// This widget prefer to onBoarding item that show image , title , description by it .
 class OnBoardingItem extends StatelessWidget {

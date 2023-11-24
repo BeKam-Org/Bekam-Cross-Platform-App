@@ -1,10 +1,12 @@
 /// The `app_theme` library provides theme configurations and common theme components for the application.
 library app_theme;
 
-import 'package:bekam/core/theme/comon_theme_components/elevated_button_theme.dart';
-import 'package:bekam/core/utils/values.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
+// 🌎 Project imports:
+import 'package:bekam/core/theme/comon_theme_components/elevated_button_theme.dart';
+import 'package:bekam/core/utils/values.dart';
 
 part 'dark_theme.dart';
 part 'light_theme.dart';
