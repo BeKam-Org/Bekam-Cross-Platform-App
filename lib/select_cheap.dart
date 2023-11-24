@@ -20,7 +20,7 @@ class SelectCheapApp extends StatelessWidget {
   /// Builds the root of the application widget tree.
   @override
   Widget build(BuildContext context) {
-    final appRouter = AppRouter();
+    final appRouter = getIt<AppRouter>();
     //Set the fit size
     return ScreenUtilInit(
       // Use builder only if you need to use library outside ScreenUtilInit context

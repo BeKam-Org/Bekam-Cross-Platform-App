@@ -8,14 +8,7 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-
-// 🐦 Flutter imports:
-import 'package:flutter/material.dart' as _i4;
-
-// 📦 Package imports:
 import 'package:auto_route/auto_route.dart' as _i3;
-
-// 🌎 Project imports:
 import 'package:bekam/presentation/screens/on_boarding/onboarding.dart' as _i2;
 import 'package:bekam/trial.dart' as _i1;
 
@@ -31,11 +24,9 @@ abstract class $AppRouter extends _i3.RootStackRouter {
       );
     },
     OnBoardingRoute.name: (routeData) {
-      final args = routeData.argsAs<OnBoardingRouteArgs>(
-          orElse: () => const OnBoardingRouteArgs());
       return _i3.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: _i2.OnBoardingPage(key: args.key),
+        child: const _i2.OnBoardingPage(),
       );
     },
   };
@@ -57,29 +48,14 @@ class HomeRoute extends _i3.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i2.OnBoardingPage]
-class OnBoardingRoute extends _i3.PageRouteInfo<OnBoardingRouteArgs> {
-  OnBoardingRoute({
-    _i4.Key? key,
-    List<_i3.PageRouteInfo>? children,
-  }) : super(
+class OnBoardingRoute extends _i3.PageRouteInfo<void> {
+  const OnBoardingRoute({List<_i3.PageRouteInfo>? children})
+      : super(
           OnBoardingRoute.name,
-          args: OnBoardingRouteArgs(key: key),
           initialChildren: children,
         );
 
   static const String name = 'OnBoardingRoute';
 
-  static const _i3.PageInfo<OnBoardingRouteArgs> page =
-      _i3.PageInfo<OnBoardingRouteArgs>(name);
-}
-
-class OnBoardingRouteArgs {
-  const OnBoardingRouteArgs({this.key});
-
-  final _i4.Key? key;
-
-  @override
-  String toString() {
-    return 'OnBoardingRouteArgs{key: $key}';
-  }
+  static const _i3.PageInfo<void> page = _i3.PageInfo<void>(name);
 }

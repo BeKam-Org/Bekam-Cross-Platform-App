@@ -1,4 +1,5 @@
 // 📦 Package imports:
+import 'package:bekam/core/router/auto_router.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
@@ -23,6 +24,9 @@ final getIt = GetIt.instance;
 
 /// A function to set up dependency injection using GetIt.
 void setupGetIt() {
+  // Register app router
+  getIt.registerSingleton<AppRouter>(AppRouter());
+
   // Registering dio method
   getIt.registerLazySingleton<Dio>(() => createAndSetupDio());
 

@@ -9,9 +9,13 @@ class NavigatorHelper {
    /// Key to access the NavigatorState for navigation operations`
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
   
-  /// GlobalKey used to access AutoRouter's navigator state.
-  static GlobalKey<AutoRouterState> autoRouteNavigatorKey = GlobalKey<AutoRouterState>();
-  
+  static final GlobalKey<NavigatorState> autoRouterNavigatorKey =
+      GlobalKey<NavigatorState>();
+
+  BuildContext? get currentContext =>
+      autoRouterNavigatorKey.currentState?.overlay?.context;
+   
+      
   /// Navigates to a named route with optional arguments.
   ///
   /// Returns a Future that resolves to the result returned by the route.
