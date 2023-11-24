@@ -1,7 +1,11 @@
+// 🎯 Dart imports:
 import 'dart:io';
 
-import 'package:bekam/data/web_services/http_request.dart';
+// 📦 Package imports:
 import 'package:dio/dio.dart';
+
+// 🌎 Project imports:
+import 'package:bekam/data/web_services/http_request.dart';
 
 /// Concrete implementation of the [HttpMethod] abstract class for performing HTTP GET requests.
 class GetMethod implements HttpMethod {

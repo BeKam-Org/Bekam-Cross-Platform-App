@@ -2,7 +2,6 @@
 import 'package:flutter/cupertino.dart';
 
 // 🌎 Project imports:
-import 'package:bekam/core/helper/navigator_helper.dart';
 import 'package:bekam/core/localization/ar_ksa/ar_ksa_translations.dart';
 import 'en_us/en_us_translations.dart';
 
@@ -20,16 +19,15 @@ class AppLocalization {
     'ar': arKsa,
   };
 
-
   /// Retrieves the AppLocalization instance based on the current context.
   ///
   /// Returns the AppLocalization instance obtained from the current context.
-  static AppLocalization of() {
-    return Localizations.of<AppLocalization>(
-        NavigatorHelper.autoRouteNavigatorKey.currentContext!, AppLocalization)!;
+  static AppLocalization of(BuildContext context) {
+    return Localizations.of<AppLocalization>(context, AppLocalization)!;
+    // return Localizations.of<AppLocalization>(
+    //     NavigatorHelper.autoRouteNavigatorKey.currentContext!, AppLocalization)!;
   }
 
-  
   /// Retrieves a list of supported languages from the localized values.
   ///
   /// Returns a list containing supported language codes.

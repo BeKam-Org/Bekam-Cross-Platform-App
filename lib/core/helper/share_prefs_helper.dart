@@ -1,5 +1,7 @@
-// 📦 Package imports:
+// 🐦 Flutter imports:
 import 'package:flutter/foundation.dart';
+
+// 📦 Package imports:
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Utility class for managing preferences using SharedPreferences.

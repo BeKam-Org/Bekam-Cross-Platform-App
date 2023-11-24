@@ -1,6 +1,8 @@
-import 'package:bekam/data/model/network_exception/network_exception.dart';
+// 📦 Package imports:
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+// 🌎 Project imports:
+import 'package:bekam/data/model/network_exception/network_exception.dart';
 
 part 'api_result.freezed.dart';
 
