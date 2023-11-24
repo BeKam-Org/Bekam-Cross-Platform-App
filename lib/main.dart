@@ -1,22 +1,18 @@
 // 🐦 Flutter imports:
 import 'package:bekam/core/di/get_initializer.dart';
-import 'package:bekam/data/business_logic/set_menu/set_menu_get_cubit.dart';
+import 'package:bekam/select_cheap.dart';
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 // 🌎 Project imports:
 import 'package:bekam/core/bloc_observer/bloc_observer.dart';
-import 'package:bekam/core/helper/custom_scroll_behaviour.dart';
-import 'package:bekam/core/localization/app_localization_delegate.dart';
-import 'package:bekam/core/router/auto_router.dart';
 import 'package:bekam/firebase_options.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-// hello from the test branch to restaurant branch
 /// The main entry point for the Flutter application.
 void main() async {
   setupGetIt();
@@ -33,66 +29,15 @@ void main() async {
   );
 
   /// Runs the application by creating an instance of MyApp.
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const SelectCheapApp(), // Wrap your app
+    ),
+  );
 }
 
-/// The root widget for the application.
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  /// Builds the root of the application widget tree.
-  @override
-  Widget build(BuildContext context) {
-    final appRouter = AppRouter();
-    //Set the fit size
-    return ScreenUtilInit(
-      // Use builder only if you need to use library outside ScreenUtilInit context
-      builder: (_, child) => MultiBlocProvider(
-        providers: [
-          BlocProvider<SetMenuGetCubit>(
-            create: (context) => getIt<SetMenuGetCubit>(),
-          )
-        ],
-        child: MaterialApp.router(
-          /// Title displayed in the operating system's task switcher.
-          title: 'select.cheap',
-
-          /// Controls the display of a banner at the top right of the app's UI in debug mode.
-          debugShowCheckedModeBanner: false,
-
-          /// Configures the app's localization support.
-          localizationsDelegates: const [
-            AppLocalizationDelegate(),
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-
-          /// Parses route information to route data.
-          routeInformationParser: appRouter.defaultRouteParser(),
-
-          /// Specifies the supported locales for the app.
-          supportedLocales: const [
-            Locale(
-              'en',
-              '',
-            ),
-            Locale(
-              'ar',
-              '',
-            ),
-          ],
-
-          /// Customizes scrolling behavior using CustomScrollBehaviour.
-          scrollBehavior: CustomScrollBehaviour(),
-
-          /// Delegates the routing handling to the appRouter.
-          routerDelegate: appRouter.delegate(),
-        ),
-      ),
-    );
-  }
-}
 
 /*
 |lib 
