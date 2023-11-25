@@ -1,4 +1,5 @@
 // 🐦 Flutter imports:
+import 'package:bekam/core/router/auto_router.gr.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -72,6 +73,9 @@ class OnBoardingPage extends StatelessWidget {
                   // CustomElevatedButton for the Get Started button.
                   CustomElevatedButton(
                     text: "lbl_get_started".tr(context),
+                    onPressed: () {
+                      AutoRouter.of(context).replace(const LoginRoute());
+                    },
                   ),
                   SizedBox(height: GlobalAppSizes.s_5.myHeight),
                 ],

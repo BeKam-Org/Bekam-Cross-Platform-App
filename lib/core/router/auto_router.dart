@@ -24,5 +24,50 @@ class AppRouter extends $AppRouter {
           /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
           durationInMilliseconds: 400,
         ),
+
+        /// CustomRoute is used to define a custom route configuration.
+        /// a route with the path '/register/login' is configured to navigate to the 'LoginRoute' page.
+        CustomRoute(
+          path: '/register/login',
+          page: LoginRoute.page,
+
+          /// TransitionsBuilder determines how the page transition animation should be performed.
+          /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+          transitionsBuilder: TransitionsBuilders.slideBottom,
+
+          /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+          /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+          durationInMilliseconds: 400,
+        ),
+
+        /// CustomRoute is used to define a custom route configuration.
+        /// a route with the path '/register/signup' is configured to navigate to the 'SignUpRoute' page.
+        CustomRoute(
+          path: '/register/signup',
+          page: SignUpRoute.page,
+
+          /// TransitionsBuilder determines how the page transition animation should be performed.
+          /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+          transitionsBuilder: TransitionsBuilders.slideBottom,
+
+          /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+          /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+          durationInMilliseconds: 400,
+        ),
+
+         /// CustomRoute is used to define a custom route configuration.
+        /// a route with the path '/password-recovey' is configured to navigate to the 'PassWordRecoveryRoute' page.
+        CustomRoute(
+          path: '/password-recovey',
+          page: PassWordRecoveryRoute.page,
+
+          /// TransitionsBuilder determines how the page transition animation should be performed.
+          /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+          transitionsBuilder: TransitionsBuilders.slideBottom,
+
+          /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+          /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+          durationInMilliseconds: 400,
+        ),
       ];
 }

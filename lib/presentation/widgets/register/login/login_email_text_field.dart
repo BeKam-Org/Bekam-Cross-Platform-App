@@ -1,0 +1,29 @@
+// 🌎 Project imports:
+import 'package:bekam/core/helper/localization_extension.dart';
+import 'package:bekam/presentation/common_widget/custom_text_form_field.dart';
+import 'package:flutter/material.dart';
+
+/// [LogunEmailTextField] is a StatelessWidget representing a custom email input field.
+///
+/// It utilizes the [CustomTextFormField] widget to display a text form field
+/// specifically designed for capturing email input. It includes localization
+/// support for the hint text and validation error message.
+class LogunEmailTextField extends StatelessWidget {
+  const LogunEmailTextField({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return CustomTextFormField(
+      controller: TextEditingController(),
+      hintText: "msg_username_or_email".tr(context),
+      textInputType: TextInputType.emailAddress,
+      textInputAction: TextInputAction.next,
+      validator: (value) {
+        if (value == null) {
+          return "err_msg_please_enter_valid_email".tr(context);
+        }
+        return null;
+      },
+    );
+  }
+}
