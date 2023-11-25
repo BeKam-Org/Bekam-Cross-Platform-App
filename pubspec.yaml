@@ -35,6 +35,8 @@ dependencies:
   flutter_staggered_grid_view: ^0.7.0
   #An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.
   flutter_svg: ^2.0.9
+  #The Font Awesome Icon pack available as Flutter Icons. Provides 2000 additional icons to use in your apps.
+  font_awesome_flutter: ^10.6.0
   # cubit state generator using source_gen 
   freezed: ^2.4.5
   #Annotations for the freezed code-generator.

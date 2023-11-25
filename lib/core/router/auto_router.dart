@@ -59,7 +59,22 @@ class AppRouter extends $AppRouter {
         /// a route with the path '/password-recovey' is configured to navigate to the 'PassWordRecoveryRoute' page.
         CustomRoute(
           path: '/password-recovey',
-          page: PassWordRecoveryRoute.page,
+          page: PasswordRecoveryRoute.page,
+
+          /// TransitionsBuilder determines how the page transition animation should be performed.
+          /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+          transitionsBuilder: TransitionsBuilders.slideBottom,
+
+          /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+          /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+          durationInMilliseconds: 400,
+        ),
+
+         /// CustomRoute is used to define a custom route configuration.
+        /// a route with the path '/home' is configured to navigate to the 'HomeRoute' page.
+        CustomRoute(
+          path: '/home',
+          page: HomeRoute.page,
 
           /// TransitionsBuilder determines how the page transition animation should be performed.
           /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.

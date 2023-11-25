@@ -1,5 +1,3 @@
-
-
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
@@ -15,15 +13,14 @@ import 'package:bekam/data/model/network_exception/network_exception.dart';
 import 'package:bekam/data/model/product_model/product_model.dart';
 
 @RoutePage()
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class TrialScreen extends StatefulWidget {
+  const TrialScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<TrialScreen> createState() => _TrialScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-
+class _TrialScreenState extends State<TrialScreen> {
   @override
   void initState() {
     super.initState();
@@ -72,8 +69,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   // );
                 },
                 error: (NetworkExceptions error) {
-                  return  Center(
-                       child: Text(NetworkExceptions.getErrorMessage(error)));
+                  return Center(
+                      child: Text(NetworkExceptions.getErrorMessage(error)));
                 },
               );
             },
