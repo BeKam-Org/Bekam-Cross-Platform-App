@@ -38,12 +38,20 @@ final Map<String, String> arKsa = {
   "msg_password_recovery": "استعادة كلمة المرور",
 
   // Home Page Strings
-  "lbl_search_on_coody": "Search on Select Cheap",
-  "lbl_filter": "Filter",
-  "lbl_delivery_to": "Delivery to",
-  "lbl_category": "Category",
-  "lbl_see_all": "See all",
-  "lbl_burgers": "Burgers",
+  "lbl_search_on_coody": "البحث على سيليكت تشيب",
+  "lbl_filter": "تصفية",
+  "lbl_delivery_to": "التوصيل إلى",
+  "lbl_category": "الفئة",
+  "lbl_see_all": "عرض الكل",
+  "lbl_burgers": "برجر",
+  "lbl_popular_items": "العناصر الشهيرة",
+  "lbl_subway": "المترو",
+  "lbl_open": "مفتوح",
+  "msg_santa_nella_ca": "سانتا نيلا، كاليفورنيا 95322",
+  "lbl_1_5km": "1.5 كم",
+  "lbl_free_shipping": "شحن مجاني",
+  "lbl_taco_bell": "تاكو بيل",
+
 
   //common strings
   "lbl_get_started": "ابدأ",
