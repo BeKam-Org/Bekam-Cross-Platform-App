@@ -3,6 +3,8 @@ part of values;
 /// A class that provides global application border radius configurations.
 class GlobalAppBorderRadius {
   // Circle borders
+ /// Circle border with a radius of 12 horizontal units.
+  static BorderRadius get circleBorder2 => BorderRadius.circular(2.myWidth);
 
   /// Circle border with a radius of 12 horizontal units.
   static BorderRadius get circleBorder12 => BorderRadius.circular(12.myWidth);

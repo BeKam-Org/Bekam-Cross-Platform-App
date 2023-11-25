@@ -150,30 +150,30 @@ class CustomSearchView extends StatelessWidget {
         prefixIcon: prefix ??
             Container(
               margin: EdgeInsets.symmetric(
-                horizontal:  GlobalAppSizes.s_12.myWidth,
-                vertical:  GlobalAppSizes.s_10.myHeight,
+                horizontal: GlobalAppSizes.s_12.myWidth,
+                vertical: GlobalAppSizes.s_10.myHeight,
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.vertical(
                   bottom: Radius.circular(
-                     GlobalAppSizes.s_30.myWidth,
+                    GlobalAppSizes.s_30.myWidth,
                   ),
                 ),
               ),
               child: CustomImageView(
                 imagePath: GlobalAppSVG.locationSvg,
-                height:  GlobalAppSizes.s_24.adaptSize,
-                width:  GlobalAppSizes.s_24.adaptSize,
+                height: GlobalAppSizes.s_24.adaptSize,
+                width: GlobalAppSizes.s_24.adaptSize,
               ),
             ),
         prefixIconConstraints: prefixConstraints ??
             BoxConstraints(
-              maxHeight:  GlobalAppSizes.s_44.myHeight,
+              maxHeight: GlobalAppSizes.s_44.myHeight,
             ),
         suffixIcon: suffix ??
             Padding(
               padding: EdgeInsets.only(
-                right:  GlobalAppSizes.s_15.myWidth,
+                right: GlobalAppSizes.s_15.myWidth,
               ),
               child: IconButton(
                 onPressed: () => controller!.clear(),
@@ -185,42 +185,42 @@ class CustomSearchView extends StatelessWidget {
             ),
         suffixIconConstraints: suffixConstraints ??
             BoxConstraints(
-              maxHeight:  GlobalAppSizes.s_44.myHeight,
+              maxHeight: GlobalAppSizes.s_44.myHeight,
             ),
         isDense: true,
         contentPadding: contentPadding ??
             EdgeInsets.only(
-              top:  GlobalAppSizes.s_12.myHeight,
-              right:  GlobalAppSizes.s_12.myWidth,
-              bottom:  GlobalAppSizes.s_12.myHeight,
+              top: GlobalAppSizes.s_12.myHeight,
+              right: GlobalAppSizes.s_12.myWidth,
+              bottom: GlobalAppSizes.s_12.myHeight,
             ),
         fillColor: fillColor ?? GlobalAppColors.gray100,
         filled: filled,
         border: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.vertical(
-                bottom: Radius.circular(
-                   GlobalAppSizes.s_30.myWidth,
-                ),
-              ),
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10.myWidth),
+                  topRight: Radius.circular(10.myWidth),
+                  bottomLeft: Radius.circular(10.myWidth),
+                  bottomRight: Radius.circular(10.myWidth)),
               borderSide: BorderSide.none,
             ),
         enabledBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.vertical(
-                bottom: Radius.circular(
-                   GlobalAppSizes.s_30.myWidth,
-                ),
-              ),
+             borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10.myWidth),
+                  topRight: Radius.circular(10.myWidth),
+                  bottomLeft: Radius.circular(10.myWidth),
+                  bottomRight: Radius.circular(10.myWidth)),
               borderSide: BorderSide.none,
             ),
         focusedBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.vertical(
-                bottom: Radius.circular(
-                   GlobalAppSizes.s_30.myWidth,
-                ),
-              ),
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10.myWidth),
+                  topRight: Radius.circular(10.myWidth),
+                  bottomLeft: Radius.circular(10.myWidth),
+                  bottomRight: Radius.circular(10.myWidth)),
               borderSide: BorderSide.none,
             ),
       );

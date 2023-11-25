@@ -34,8 +34,31 @@ final Map<String, String> enUs = {
   "msg_already_have_an2": "Already have an account? ",
 
   // Password Recovery Strings
-    "msg_enter_your_email": "Enter your email to recover your password",
+  "msg_enter_your_email": "Enter your email to recover your password",
   "msg_password_recovery": "Password Recovery",
+
+  // Home Page Strings
+  "lbl_search_on_coody": "Search on Select Cheap",
+  "lbl_filter": "Filter",
+  "lbl_delivery_to": "Delivery to",
+  "lbl_category": "Category",
+  "lbl_see_all": "See all",
+  "lbl_burgers": "Burgers",
+  "lbl_popular_items": "Popular Items",
+  "lbl_subway": "Subway",
+  "lbl_open": "Open",
+  "msg_santa_nella_ca": "Santa Nella, CA 95322",
+  "lbl_1_5km": "1.5km",
+  "lbl_free_shipping": "Free shipping",
+  "lbl_taco_bell": "Taco Bell",
+  "lbl_close": "Close",
+  "lbl_0_2_km": "0.2 km",
+  "lbl_4_5": "4.5",
+  "lbl_set_mnu" : 'Set menu',
+  "lbl_nearby_store" : 'Nearby Stores',
+   "lbl_latest_products" : 'Latest products',
+   "lbl_banners": 'Banners',
+
   //common strings
   "lbl_get_started": "Get started",
 };

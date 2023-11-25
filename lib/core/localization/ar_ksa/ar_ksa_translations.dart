@@ -29,13 +29,21 @@ final Map<String, String> arKsa = {
   "msg_connect_with_facebook": "الاتصال بفيسبوك",
   "msg_connect_with_google": "الاتصال بجوجل",
 
-// Signup Strings
+  // Signup Strings
   "msg_hello_create_account": "مرحبًا! أنشئ حساب",
   "msg_already_have_an2": "هل لديك حساب بالفعل؟",
 
-// Password Recovery Strings
+  // Password Recovery Strings
   "msg_enter_your_email": "أدخل بريدك الإلكتروني لاستعادة كلمة المرور",
   "msg_password_recovery": "استعادة كلمة المرور",
+
+  // Home Page Strings
+  "lbl_search_on_coody": "Search on Select Cheap",
+  "lbl_filter": "Filter",
+  "lbl_delivery_to": "Delivery to",
+  "lbl_category": "Category",
+  "lbl_see_all": "See all",
+  "lbl_burgers": "Burgers",
 
   //common strings
   "lbl_get_started": "ابدأ",
