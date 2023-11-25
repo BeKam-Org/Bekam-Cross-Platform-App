@@ -19,8 +19,6 @@ void main() async {
   /// Setup dependency injection using GetIt.
   setupGetIt();
 
-  /// Initialize SharedPreferences.
-  await getIt<PrefUtils>().init();
 
   /// Sets the global observer for BLoC changes using MyBlocObserver.
   Bloc.observer = MyBlocObserver();
@@ -32,6 +30,9 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  /// Initialize SharedPreferences.
+  await getIt<PrefUtils>().init();
 
   /// Runs the application by creating an instance of MyApp.
   runApp(

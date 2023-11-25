@@ -18,7 +18,7 @@ class GlobalAppImages {
   // 3 - Onboarding images
   /// Path to the third onboarding-3 image.
   static String onboardingImage3 =
-      '$imagePath/onBoarding/on_boarding_image3.svg';
+      '$imagePath/onBoarding/on_boarding_image3.png';
 }
 
 /// A class that provides paths to global SVGs assets used throughout the application.
