@@ -1,4 +1,4 @@
-import 'package:bekam/presentation/widgets/home/animated_nav_bart/animated_nav_bar.dart';
+import 'package:bekam/presentation/widgets/home_nav/animated_nav_bart/animated_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show HapticFeedback;
 

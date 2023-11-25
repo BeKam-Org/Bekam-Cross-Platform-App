@@ -55,7 +55,7 @@ class AppRouter extends $AppRouter {
           durationInMilliseconds: 400,
         ),
 
-         /// CustomRoute is used to define a custom route configuration.
+        /// CustomRoute is used to define a custom route configuration.
         /// a route with the path '/password-recovey' is configured to navigate to the 'PassWordRecoveryRoute' page.
         CustomRoute(
           path: '/password-recovey',
@@ -70,11 +70,11 @@ class AppRouter extends $AppRouter {
           durationInMilliseconds: 400,
         ),
 
-         /// CustomRoute is used to define a custom route configuration.
+        /// CustomRoute is used to define a custom route configuration.
         /// a route with the path '/home' is configured to navigate to the 'HomeRoute' page.
         CustomRoute(
-          path: '/home',
-          page: HomeRoute.page,
+          path: '/select-cheap-restaurant',
+          page: HomeNavRoute.page,
 
           /// TransitionsBuilder determines how the page transition animation should be performed.
           /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
@@ -83,6 +83,75 @@ class AppRouter extends $AppRouter {
           /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
           /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
           durationInMilliseconds: 400,
+
+          children: [
+            /// Builds a Redirect AutoRoute instance with no type
+            ///
+            /// Redirect routes don't map to a page, instead they
+            /// Map to an existing route-entry that maps to a page
+            RedirectRoute(path: '', redirectTo: '/home'),
+
+            /// CustomRoute is used to define a custom route configuration.
+            /// a route with the path '/select-cheap-restaurant/cart' is configured to navigate to the 'CartRoute' page.
+            CustomRoute(
+              path: 'cart',
+              page: CartRoute.page,
+
+              /// TransitionsBuilder determines how the page transition animation should be performed.
+              /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+              transitionsBuilder: TransitionsBuilders.slideBottom,
+
+              /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+              /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+              durationInMilliseconds: 400,
+            ),
+
+            /// CustomRoute is used to define a custom route configuration.
+            /// a route with the path '/select-cheap-restaurant/home' is configured to navigate to the 'HomeRoute' page.
+            CustomRoute(
+              path: 'home',
+              page: HomeRoute.page,
+
+              /// TransitionsBuilder determines how the page transition animation should be performed.
+              /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+              transitionsBuilder: TransitionsBuilders.slideBottom,
+
+              /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+              /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+              durationInMilliseconds: 400,
+            ),
+
+            /// CustomRoute is used to define a custom route configuration.
+            /// a route with the path '/select-cheap-restaurant/orders' is configured to navigate to the 'OrderRoute' page.
+            CustomRoute(
+              path: 'orders',
+              page: OrderRoute.page,
+
+              /// TransitionsBuilder determines how the page transition animation should be performed.
+              /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+              transitionsBuilder: TransitionsBuilders.slideBottom,
+
+              /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+              /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+              durationInMilliseconds: 400,
+            ),
+
+            /// CustomRoute is used to define a custom route configuration.
+            /// a route with the path '/select-cheap-restaurant/favourite' is configured to navigate to the 'OrderRoute' page.
+            CustomRoute(
+              path: 'favourite',
+              page: FavouriteRoute.page,
+
+              /// TransitionsBuilder determines how the page transition animation should be performed.
+              /// In this case, the 'slideBottom' transition is used, meaning the new page will slide up from the bottom.
+              transitionsBuilder: TransitionsBuilders.slideBottom,
+
+              /// DurationInMilliseconds specifies the duration of the transition animation in milliseconds.
+              /// The value of 400 indicates a duration of 400 milliseconds for the slide animation.
+              durationInMilliseconds: 400,
+            ),
+          ],
         ),
+      
       ];
 }
