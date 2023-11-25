@@ -4,12 +4,14 @@
 import 'dart:io';
 
 // 🐦 Flutter imports:
-import 'package:bekam/core/utils/values.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+// 🌎 Project imports:
+import 'package:bekam/core/utils/values.dart';
 
 /// A customizable image view widget that supports different image types (SVG, PNG, network, file).
 class CustomImageView extends StatelessWidget {

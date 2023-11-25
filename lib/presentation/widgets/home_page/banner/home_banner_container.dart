@@ -1,8 +1,11 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/helper/localization_extension.dart';
 import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/presentation/widgets/home_page/banner/banner_item.dart';
 import 'package:bekam/presentation/widgets/home_page/base_home_page_container.dart';
-import 'package:flutter/material.dart';
 
 class HomeBannerContainer extends StatelessWidget {
   const HomeBannerContainer({super.key});

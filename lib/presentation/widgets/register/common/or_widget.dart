@@ -1,7 +1,9 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
 // 🌎 Project imports:
 import 'package:bekam/core/helper/localization_extension.dart';
 import 'package:bekam/core/utils/values.dart';
-import 'package:flutter/material.dart';
 
 /// [OrWidget] is a StatelessWidget representing a visual divider with the "OR" label in between.
 class OrWidget extends StatelessWidget {

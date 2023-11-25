@@ -1,7 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
-
 /// Helper class for managing navigation operations within the app using the Navigator widget
 class NavigatorHelper {
    /// Key to access the NavigatorState for navigation operations`

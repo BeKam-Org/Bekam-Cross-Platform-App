@@ -1,9 +1,12 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/helper/localization_extension.dart';
 import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/data/model/store_model/store_model.dart';
 import 'package:bekam/presentation/widgets/home_page/base_home_page_container.dart';
 import 'package:bekam/presentation/widgets/home_page/nearby_stores/store_item.dart';
-import 'package:flutter/material.dart';
 
 class HomeNearbyStoresContainer extends StatelessWidget {
   const HomeNearbyStoresContainer({super.key});

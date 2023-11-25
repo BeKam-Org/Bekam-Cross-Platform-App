@@ -1,5 +1,7 @@
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 
+// 🌎 Project imports:
 import 'animated_nav_bar_btn.dart';
 
 /// Enumeration for different styles of the navigation bar.

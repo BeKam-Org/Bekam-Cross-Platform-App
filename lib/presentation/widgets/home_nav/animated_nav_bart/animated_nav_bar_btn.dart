@@ -1,7 +1,9 @@
-import 'package:bekam/presentation/widgets/home_nav/animated_nav_bart/animated_nav_bar.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show HapticFeedback;
 
+// 🌎 Project imports:
+import 'package:bekam/presentation/widgets/home_nav/animated_nav_bart/animated_nav_bar.dart';
 import 'animated_nav_bar_base_btn.dart';
 
 /// The [AnimatedNavBarButton] is a StatefulWidget that represents a button

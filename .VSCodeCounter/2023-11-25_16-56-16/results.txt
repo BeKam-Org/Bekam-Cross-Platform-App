@@ -1,0 +1,364 @@
+Date : 2023-11-25 16:56:16
+Directory : e:\new\bekam
+Total : 215 files,  18247 codes, 2146 comments, 2209 blanks, all 22602 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |        144 |     12,351 |      1,903 |      1,920 |     16,174 |
+| JSON       |         15 |      4,535 |          0 |          3 |      4,538 |
+| C++        |         16 |        539 |        118 |        181 |        838 |
+| XML        |         22 |        508 |         48 |         23 |        579 |
+| Groovy     |          3 |         91 |          5 |         22 |        118 |
+| Swift      |          6 |         62 |          7 |         20 |         89 |
+| YAML       |          2 |         60 |         49 |         12 |        121 |
+| CMake      |          2 |         39 |          0 |         12 |         51 |
+| HTML       |          1 |         38 |         16 |          6 |         60 |
+| Markdown   |          2 |         16 |          0 |          8 |         24 |
+| Properties |          2 |          8 |          0 |          2 |         10 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                          |        215 |     18,247 |      2,146 |      2,209 |     22,602 |
+| . (Files)                                                                                                  |          3 |         73 |         49 |         18 |        140 |
+| android                                                                                                    |         13 |        189 |         51 |         33 |        273 |
+| android (Files)                                                                                            |          3 |         38 |          0 |         10 |         48 |
+| android\app                                                                                                |          9 |        146 |         51 |         22 |        219 |
+| android\app (Files)                                                                                        |          2 |        102 |          5 |         13 |        120 |
+| android\app\src                                                                                            |          7 |         44 |         46 |          9 |         99 |
+| android\app\src\debug                                                                                      |          1 |          3 |          4 |          1 |          8 |
+| android\app\src\main                                                                                       |          5 |         38 |         38 |          7 |         83 |
+| android\app\src\main (Files)                                                                               |          1 |         12 |          6 |          1 |         19 |
+| android\app\src\main\res                                                                                   |          4 |         26 |         32 |          6 |         64 |
+| android\app\src\main\res\drawable                                                                          |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\drawable-v21                                                                      |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\values                                                                            |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\main\res\values-night                                                                      |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\profile                                                                                    |          1 |          3 |          4 |          1 |          8 |
+| android\gradle                                                                                             |          1 |          5 |          0 |          1 |          6 |
+| android\gradle\wrapper                                                                                     |          1 |          5 |          0 |          1 |          6 |
+| assets                                                                                                     |         12 |         60 |          0 |         11 |         71 |
+| assets\svg                                                                                                 |         12 |         60 |          0 |         11 |         71 |
+| ios                                                                                                        |          9 |        236 |          4 |         13 |        253 |
+| ios (Files)                                                                                                |          1 |          7 |          0 |          0 |          7 |
+| ios\Runner                                                                                                 |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner (Files)                                                                                         |          2 |         13 |          0 |          3 |         16 |
+| ios\RunnerTests                                                                                            |          1 |          7 |          2 |          4 |         13 |
+| ios\Runner\Assets.xcassets                                                                                 |          3 |        148 |          0 |          4 |        152 |
+| ios\Runner\Assets.xcassets\AppIcon.appiconset                                                              |          1 |        122 |          0 |          1 |        123 |
+| ios\Runner\Assets.xcassets\LaunchImage.imageset                                                            |          2 |         26 |          0 |          3 |         29 |
+| ios\Runner\Base.lproj                                                                                      |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                                        |        151 |     16,564 |      1,890 |      1,912 |     20,366 |
+| lib (Files)                                                                                                |          4 |        225 |        101 |         40 |        366 |
+| lib\core                                                                                                   |         41 |      1,348 |        434 |        369 |      2,151 |
+| lib\core\bloc_observer                                                                                     |          1 |         24 |          7 |          6 |         37 |
+| lib\core\di                                                                                                |          1 |         49 |         13 |         13 |         75 |
+| lib\core\helper                                                                                            |          8 |        176 |         93 |         55 |        324 |
+| lib\core\localization                                                                                      |          4 |        114 |         41 |         29 |        184 |
+| lib\core\localization (Files)                                                                              |          2 |         32 |         23 |         13 |         68 |
+| lib\core\localization\ar_ksa                                                                               |          1 |         34 |          9 |          8 |         51 |
+| lib\core\localization\en_us                                                                                |          1 |         48 |          9 |          8 |         65 |
+| lib\core\networking                                                                                        |          1 |         26 |          9 |          8 |         43 |
+| lib\core\router                                                                                            |          2 |        236 |         89 |         67 |        392 |
+| lib\core\theme                                                                                             |          9 |        157 |         55 |         46 |        258 |
+| lib\core\theme (Files)                                                                                     |          3 |         37 |         25 |         29 |         91 |
+| lib\core\theme\comon_theme_components                                                                      |          6 |        120 |         30 |         17 |        167 |
+| lib\core\utils                                                                                             |         15 |        566 |        127 |        145 |        838 |
+| lib\data                                                                                                   |         50 |      7,722 |        837 |      1,116 |      9,675 |
+| lib\data\business_logic                                                                                    |         18 |      2,803 |        256 |        459 |      3,518 |
+| lib\data\business_logic\banner                                                                             |          3 |        548 |         47 |         88 |        683 |
+| lib\data\business_logic\category                                                                           |          3 |        548 |         47 |         88 |        683 |
+| lib\data\business_logic\latest_product                                                                     |          3 |        551 |         47 |         88 |        686 |
+| lib\data\business_logic\onboarding                                                                         |          1 |         23 |          6 |          4 |         33 |
+| lib\data\business_logic\popular_product                                                                    |          3 |        554 |         47 |         88 |        689 |
+| lib\data\business_logic\set_menu                                                                           |          3 |        548 |         47 |         87 |        682 |
+| lib\data\business_logic\theme                                                                              |          2 |         31 |         15 |         16 |         62 |
+| lib\data\model                                                                                             |         21 |      4,634 |        427 |        601 |      5,662 |
+| lib\data\model\api_result                                                                                  |          2 |        299 |         43 |         52 |        394 |
+| lib\data\model\banner_model                                                                                |          2 |         45 |         34 |         18 |         97 |
+| lib\data\model\category_model                                                                              |          2 |         64 |         39 |         21 |        124 |
+| lib\data\model\error_model                                                                                 |          2 |         20 |         18 |         12 |         50 |
+| lib\data\model\network_exception                                                                           |          2 |      3,671 |        107 |        302 |      4,080 |
+| lib\data\model\onboarding_model                                                                            |          1 |          9 |         13 |          7 |         29 |
+| lib\data\model\product_model                                                                               |          9 |        505 |        173 |        182 |        860 |
+| lib\data\model\store_model                                                                                 |          1 |         21 |          0 |          7 |         28 |
+| lib\data\repository                                                                                        |          5 |        132 |         81 |         38 |        251 |
+| lib\data\web_services                                                                                      |          6 |        153 |         73 |         18 |        244 |
+| lib\json                                                                                                   |          8 |      4,227 |          0 |          0 |      4,227 |
+| lib\presentation                                                                                           |         48 |      3,042 |        518 |        387 |      3,947 |
+| lib\presentation\common_widget                                                                             |         12 |        914 |        332 |        190 |      1,436 |
+| lib\presentation\common_widget (Files)                                                                     |          8 |        780 |        269 |        157 |      1,206 |
+| lib\presentation\common_widget\app_bar                                                                     |          4 |        134 |         63 |         33 |        230 |
+| lib\presentation\screens                                                                                   |          9 |        402 |         63 |         50 |        515 |
+| lib\presentation\screens\cart                                                                              |          1 |         14 |          0 |          4 |         18 |
+| lib\presentation\screens\favourite                                                                         |          1 |         14 |          0 |          2 |         16 |
+| lib\presentation\screens\home_nav                                                                          |          1 |         35 |          8 |          4 |         47 |
+| lib\presentation\screens\home_page                                                                         |          1 |         39 |          7 |         12 |         58 |
+| lib\presentation\screens\on_boarding                                                                       |          1 |         73 |         10 |          7 |         90 |
+| lib\presentation\screens\order                                                                             |          1 |         14 |          0 |          3 |         17 |
+| lib\presentation\screens\register                                                                          |          3 |        213 |         38 |         18 |        269 |
+| lib\presentation\screens\register\login                                                                    |          1 |         81 |         15 |          6 |        102 |
+| lib\presentation\screens\register\password_recovery                                                        |          1 |         57 |         10 |          6 |         73 |
+| lib\presentation\screens\register\signup                                                                   |          1 |         75 |         13 |          6 |         94 |
+| lib\presentation\widgets                                                                                   |         27 |      1,726 |        123 |        147 |      1,996 |
+| lib\presentation\widgets\home_nav                                                                          |          4 |        518 |         51 |         62 |        631 |
+| lib\presentation\widgets\home_nav (Files)                                                                  |          1 |         69 |          5 |          5 |         79 |
+| lib\presentation\widgets\home_nav\animated_nav_bart                                                        |          3 |        449 |         46 |         57 |        552 |
+| lib\presentation\widgets\home_page                                                                         |         14 |        960 |          0 |         44 |      1,004 |
+| lib\presentation\widgets\home_page (Files)                                                                 |          1 |         21 |          0 |          3 |         24 |
+| lib\presentation\widgets\home_page\banner                                                                  |          2 |         89 |          0 |          6 |         95 |
+| lib\presentation\widgets\home_page\category                                                                |          2 |        133 |          0 |          6 |        139 |
+| lib\presentation\widgets\home_page\nearby_stores                                                           |          2 |        163 |          0 |          7 |        170 |
+| lib\presentation\widgets\home_page\popular&latest products                                                 |          4 |        286 |          0 |         13 |        299 |
+| lib\presentation\widgets\home_page\search                                                                  |          1 |        135 |          0 |          3 |        138 |
+| lib\presentation\widgets\home_page\set_menu                                                                |          2 |        133 |          0 |          6 |        139 |
+| lib\presentation\widgets\onboarding                                                                        |          1 |         49 |          9 |          5 |         63 |
+| lib\presentation\widgets\register                                                                          |          8 |        199 |         63 |         36 |        298 |
+| lib\presentation\widgets\register\common                                                                   |          3 |         86 |         25 |         21 |        132 |
+| lib\presentation\widgets\register\login                                                                    |          2 |         43 |         13 |          6 |         62 |
+| lib\presentation\widgets\register\password_recovery                                                        |          1 |         27 |          9 |          3 |         39 |
+| lib\presentation\widgets\register\signup                                                                   |          2 |         43 |         16 |          6 |         65 |
+| linux                                                                                                      |          6 |        112 |         27 |         44 |        183 |
+| linux (Files)                                                                                              |          3 |         86 |         18 |         27 |        131 |
+| linux\flutter                                                                                              |          3 |         26 |          9 |         17 |         52 |
+| macos                                                                                                      |          7 |        461 |          5 |         16 |        482 |
+| macos (Files)                                                                                              |          1 |          7 |          0 |          0 |          7 |
+| macos\Flutter                                                                                              |          1 |         16 |          3 |          4 |         23 |
+| macos\Runner                                                                                               |          4 |        431 |          0 |          8 |        439 |
+| macos\Runner (Files)                                                                                       |          2 |         20 |          0 |          6 |         26 |
+| macos\RunnerTests                                                                                          |          1 |          7 |          2 |          4 |         13 |
+| macos\Runner\Assets.xcassets                                                                               |          1 |         68 |          0 |          1 |         69 |
+| macos\Runner\Assets.xcassets\AppIcon.appiconset                                                            |          1 |         68 |          0 |          1 |         69 |
+| macos\Runner\Base.lproj                                                                                    |          1 |        343 |          0 |          1 |        344 |
+| test                                                                                                       |          1 |         14 |         13 |          8 |         35 |
+| web                                                                                                        |          2 |         73 |         16 |          6 |         95 |
+| windows                                                                                                    |         11 |        465 |         91 |        148 |        704 |
+| windows\flutter                                                                                            |          3 |         38 |          9 |         17 |         64 |
+| windows\runner                                                                                             |          8 |        427 |         82 |        131 |        640 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                   | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\new\bekam\README.md                                                                                     | Markdown   |         13 |          0 |          6 |         19 |
+| e:\new\bekam\analysis_options.yaml                                                                         | YAML       |          3 |         23 |          4 |         30 |
+| e:\new\bekam\android\app\build.gradle                                                                      | Groovy     |         56 |          5 |         13 |         74 |
+| e:\new\bekam\android\app\google-services.json                                                              | JSON       |         46 |          0 |          0 |         46 |
+| e:\new\bekam\android\app\src\debug\AndroidManifest.xml                                                     | XML        |          3 |          4 |          1 |          8 |
+| e:\new\bekam\android\app\src\main\AndroidManifest.xml                                                      | XML        |         12 |          6 |          1 |         19 |
+| e:\new\bekam\android\app\src\main\res\drawable-v21\launch_background.xml                                   | XML        |          4 |          7 |          2 |         13 |
+| e:\new\bekam\android\app\src\main\res\drawable\launch_background.xml                                       | XML        |          4 |          7 |          2 |         13 |
+| e:\new\bekam\android\app\src\main\res\values-night\styles.xml                                              | XML        |          9 |          9 |          1 |         19 |
+| e:\new\bekam\android\app\src\main\res\values\styles.xml                                                    | XML        |          9 |          9 |          1 |         19 |
+| e:\new\bekam\android\app\src\profile\AndroidManifest.xml                                                   | XML        |          3 |          4 |          1 |          8 |
+| e:\new\bekam\android\build.gradle                                                                          | Groovy     |         27 |          0 |          5 |         32 |
+| e:\new\bekam\android\gradle.properties                                                                     | Properties |          3 |          0 |          1 |          4 |
+| e:\new\bekam\android\gradle\wrapper\gradle-wrapper.properties                                              | Properties |          5 |          0 |          1 |          6 |
+| e:\new\bekam\android\settings.gradle                                                                       | Groovy     |          8 |          0 |          4 |         12 |
+| e:\new\bekam\assets\svg\img_close_gray_400_01.svg                                                          | XML        |          3 |          0 |          1 |          4 |
+| e:\new\bekam\assets\svg\img_close_onprimarycontainer.svg                                                   | XML        |          3 |          0 |          1 |          4 |
+| e:\new\bekam\assets\svg\img_facebook.svg                                                                   | XML        |          9 |          0 |          1 |         10 |
+| e:\new\bekam\assets\svg\img_flag.svg                                                                       | XML        |         17 |          0 |          1 |         18 |
+| e:\new\bekam\assets\svg\img_google.svg                                                                     | XML        |          8 |          0 |          1 |          9 |
+| e:\new\bekam\assets\svg\img_icon_l.svg                                                                     | XML        |          3 |          0 |          1 |          4 |
+| e:\new\bekam\assets\svg\img_icon_primary.svg                                                               | XML        |          3 |          0 |          1 |          4 |
+| e:\new\bekam\assets\svg\img_location_gray_400_01.svg                                                       | XML        |          3 |          0 |          1 |          4 |
+| e:\new\bekam\assets\svg\img_location_teal_700.svg                                                          | XML        |          3 |          0 |          1 |          4 |
+| e:\new\bekam\assets\svg\img_settings.svg                                                                   | XML        |          3 |          0 |          1 |          4 |
+| e:\new\bekam\assets\svg\img_vector.svg                                                                     | XML        |          4 |          0 |          1 |          5 |
+| e:\new\bekam\assets\svg\logo.svg                                                                           | XML        |          1 |          0 |          0 |          1 |
+| e:\new\bekam\ios\RunnerTests\RunnerTests.swift                                                             | Swift      |          7 |          2 |          4 |         13 |
+| e:\new\bekam\ios\Runner\AppDelegate.swift                                                                  | Swift      |         12 |          0 |          2 |         14 |
+| e:\new\bekam\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json                                   | JSON       |        122 |          0 |          1 |        123 |
+| e:\new\bekam\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json                                 | JSON       |         23 |          0 |          1 |         24 |
+| e:\new\bekam\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md                                     | Markdown   |          3 |          0 |          2 |          5 |
+| e:\new\bekam\ios\Runner\Base.lproj\LaunchScreen.storyboard                                                 | XML        |         36 |          1 |          1 |         38 |
+| e:\new\bekam\ios\Runner\Base.lproj\Main.storyboard                                                         | XML        |         25 |          1 |          1 |         27 |
+| e:\new\bekam\ios\Runner\Runner-Bridging-Header.h                                                           | C++        |          1 |          0 |          1 |          2 |
+| e:\new\bekam\ios\firebase_app_id_file.json                                                                 | JSON       |          7 |          0 |          0 |          7 |
+| e:\new\bekam\lib\core\bloc_observer\bloc_observer.dart                                                     | Dart       |         24 |          7 |          6 |         37 |
+| e:\new\bekam\lib\core\di\get_initializer.dart                                                              | Dart       |         49 |         13 |         13 |         75 |
+| e:\new\bekam\lib\core\helper\auth_guard.dart                                                               | Dart       |         12 |         16 |          4 |         32 |
+| e:\new\bekam\lib\core\helper\custom_scroll_behaviour.dart                                                  | Dart       |         10 |          3 |          2 |         15 |
+| e:\new\bekam\lib\core\helper\localization_extension.dart                                                   | Dart       |          6 |          6 |          3 |         15 |
+| e:\new\bekam\lib\core\helper\logger_helper.dart                                                            | Dart       |         18 |          7 |          5 |         30 |
+| e:\new\bekam\lib\core\helper\navigator_helper.dart                                                         | Dart       |         27 |         13 |         11 |         51 |
+| e:\new\bekam\lib\core\helper\network_info.dart                                                             | Dart       |         31 |         19 |         11 |         61 |
+| e:\new\bekam\lib\core\helper\responsive_helper.dart                                                        | Dart       |         53 |         20 |         11 |         84 |
+| e:\new\bekam\lib\core\helper\share_prefs_helper.dart                                                       | Dart       |         19 |          9 |          8 |         36 |
+| e:\new\bekam\lib\core\localization\app_localization.dart                                                   | Dart       |         17 |         14 |          7 |         38 |
+| e:\new\bekam\lib\core\localization\app_localization_delegate.dart                                          | Dart       |         15 |          9 |          6 |         30 |
+| e:\new\bekam\lib\core\localization\ar_ksa\ar_ksa_translations.dart                                         | Dart       |         34 |          9 |          8 |         51 |
+| e:\new\bekam\lib\core\localization\en_us\en_us_translations.dart                                           | Dart       |         48 |          9 |          8 |         65 |
+| e:\new\bekam\lib\core\networking\dio.dart                                                                  | Dart       |         26 |          9 |          8 |         43 |
+| e:\new\bekam\lib\core\router\auto_router.dart                                                              | Dart       |         65 |         62 |         31 |        158 |
+| e:\new\bekam\lib\core\router\auto_router.gr.dart                                                           | Dart       |        171 |         27 |         36 |        234 |
+| e:\new\bekam\lib\core\theme\comon_theme_components\common_theme.dart                                       | Dart       |         11 |          8 |          6 |         25 |
+| e:\new\bekam\lib\core\theme\comon_theme_components\divider_themes.dart                                     | Dart       |          8 |          4 |          3 |         15 |
+| e:\new\bekam\lib\core\theme\comon_theme_components\elevated_button_theme.dart                              | Dart       |         16 |          4 |          1 |         21 |
+| e:\new\bekam\lib\core\theme\comon_theme_components\page_transitions.dart                                   | Dart       |         10 |          2 |          2 |         14 |
+| e:\new\bekam\lib\core\theme\comon_theme_components\radio_theme.dart                                        | Dart       |         16 |          7 |          3 |         26 |
+| e:\new\bekam\lib\core\theme\comon_theme_components\text_common_theme.dart                                  | Dart       |         59 |          5 |          2 |         66 |
+| e:\new\bekam\lib\core\theme\dark_theme.dart                                                                | Dart       |         13 |         11 |         11 |         35 |
+| e:\new\bekam\lib\core\theme\light_theme.dart                                                               | Dart       |         13 |         11 |         11 |         35 |
+| e:\new\bekam\lib\core\theme\theme.dart                                                                     | Dart       |         11 |          3 |          7 |         21 |
+| e:\new\bekam\lib\core\utils\borders.dart                                                                   | Dart       |          8 |          0 |          8 |         16 |
+| e:\new\bekam\lib\core\utils\buttons.dart                                                                   | Dart       |         88 |         16 |         16 |        120 |
+| e:\new\bekam\lib\core\utils\colors.dart                                                                    | Dart       |         56 |         29 |         27 |        112 |
+| e:\new\bekam\lib\core\utils\decoration.dart                                                                | Dart       |        114 |         21 |         21 |        156 |
+| e:\new\bekam\lib\core\utils\functions.dart                                                                 | Dart       |          3 |          1 |          4 |          8 |
+| e:\new\bekam\lib\core\utils\get.dart                                                                       | Dart       |          5 |          3 |          3 |         11 |
+| e:\new\bekam\lib\core\utils\icons.dart                                                                     | Dart       |          3 |          0 |          3 |          6 |
+| e:\new\bekam\lib\core\utils\images.dart                                                                    | Dart       |         30 |         16 |         20 |         66 |
+| e:\new\bekam\lib\core\utils\radius.dart                                                                    | Dart       |         19 |         17 |         15 |         51 |
+| e:\new\bekam\lib\core\utils\shadows.dart                                                                   | Dart       |          1 |          0 |          1 |          2 |
+| e:\new\bekam\lib\core\utils\size_utils.dart                                                                | Dart       |         29 |         14 |         10 |         53 |
+| e:\new\bekam\lib\core\utils\sizes.dart                                                                     | Dart       |         37 |          0 |          6 |         43 |
+| e:\new\bekam\lib\core\utils\strings.dart                                                                   | Dart       |          3 |          0 |          3 |          6 |
+| e:\new\bekam\lib\core\utils\styles.dart                                                                    | Dart       |        152 |          7 |          3 |        162 |
+| e:\new\bekam\lib\core\utils\values.dart                                                                    | Dart       |         18 |          3 |          5 |         26 |
+| e:\new\bekam\lib\data\business_logic\banner\banner_get_cubit.dart                                          | Dart       |         17 |         14 |          6 |         37 |
+| e:\new\bekam\lib\data\business_logic\banner\banner_get_state.dart                                          | Dart       |         11 |          9 |          7 |         27 |
+| e:\new\bekam\lib\data\business_logic\banner\banner_get_state.freezed.dart                                  | Dart       |        520 |         24 |         75 |        619 |
+| e:\new\bekam\lib\data\business_logic\category\category_get_cubit.dart                                      | Dart       |         17 |         14 |          6 |         37 |
+| e:\new\bekam\lib\data\business_logic\category\category_get_state.dart                                      | Dart       |         11 |          9 |          7 |         27 |
+| e:\new\bekam\lib\data\business_logic\category\category_get_state.freezed.dart                              | Dart       |        520 |         24 |         75 |        619 |
+| e:\new\bekam\lib\data\business_logic\latest_product\latest_product_get_cubit.dart                          | Dart       |         19 |         14 |          6 |         39 |
+| e:\new\bekam\lib\data\business_logic\latest_product\latest_product_get_state.dart                          | Dart       |         11 |          9 |          7 |         27 |
+| e:\new\bekam\lib\data\business_logic\latest_product\latest_product_get_state.freezed.dart                  | Dart       |        521 |         24 |         75 |        620 |
+| e:\new\bekam\lib\data\business_logic\onboarding\onboarding_vm.dart                                         | Dart       |         23 |          6 |          4 |         33 |
+| e:\new\bekam\lib\data\business_logic\popular_product\popular_product_get.dart                              | Dart       |         22 |         14 |          6 |         42 |
+| e:\new\bekam\lib\data\business_logic\popular_product\popular_product_get_state.dart                        | Dart       |         11 |          9 |          7 |         27 |
+| e:\new\bekam\lib\data\business_logic\popular_product\popular_product_get_state.freezed.dart                | Dart       |        521 |         24 |         75 |        620 |
+| e:\new\bekam\lib\data\business_logic\set_menu\set_menu_get_cubit.dart                                      | Dart       |         17 |         14 |          5 |         36 |
+| e:\new\bekam\lib\data\business_logic\set_menu\set_menu_get_state.dart                                      | Dart       |         11 |          9 |          7 |         27 |
+| e:\new\bekam\lib\data\business_logic\set_menu\set_menu_get_state.freezed.dart                              | Dart       |        520 |         24 |         75 |        619 |
+| e:\new\bekam\lib\data\business_logic\theme\theme_cubit.dart                                                | Dart       |         25 |         11 |         12 |         48 |
+| e:\new\bekam\lib\data\business_logic\theme\theme_state.dart                                                | Dart       |          6 |          4 |          4 |         14 |
+| e:\new\bekam\lib\data\model\api_result\api_result.dart                                                     | Dart       |          9 |         25 |          5 |         39 |
+| e:\new\bekam\lib\data\model\api_result\api_result.freezed.dart                                             | Dart       |        290 |         18 |         47 |        355 |
+| e:\new\bekam\lib\data\model\banner_model\banner_model.dart                                                 | Dart       |         23 |         30 |         13 |         66 |
+| e:\new\bekam\lib\data\model\banner_model\banner_model.g.dart                                               | Dart       |         22 |          4 |          5 |         31 |
+| e:\new\bekam\lib\data\model\category_model\category_model.dart                                             | Dart       |         35 |         35 |         16 |         86 |
+| e:\new\bekam\lib\data\model\category_model\category_model.g.dart                                           | Dart       |         29 |          4 |          5 |         38 |
+| e:\new\bekam\lib\data\model\error_model\error_model.dart                                                   | Dart       |         10 |         14 |          7 |         31 |
+| e:\new\bekam\lib\data\model\error_model\error_model.g.dart                                                 | Dart       |         10 |          4 |          5 |         19 |
+| e:\new\bekam\lib\data\model\network_exception\network_exception.dart                                       | Dart       |        148 |         41 |         25 |        214 |
+| e:\new\bekam\lib\data\model\network_exception\network_exception.freezed.dart                               | Dart       |      3,523 |         66 |        277 |      3,866 |
+| e:\new\bekam\lib\data\model\onboarding_model\onboarding_model.dart                                         | Dart       |          9 |         13 |          7 |         29 |
+| e:\new\bekam\lib\data\model\product_model\add_ons.dart                                                     | Dart       |         48 |         20 |         20 |         88 |
+| e:\new\bekam\lib\data\model\product_model\branch_product.dart                                              | Dart       |         71 |         20 |         21 |        112 |
+| e:\new\bekam\lib\data\model\product_model\category_id.dart                                                 | Dart       |         21 |         12 |         14 |         47 |
+| e:\new\bekam\lib\data\model\product_model\choice_option.dart                                               | Dart       |         26 |         14 |         14 |         54 |
+| e:\new\bekam\lib\data\model\product_model\product.dart                                                     | Dart       |        209 |         57 |         58 |        324 |
+| e:\new\bekam\lib\data\model\product_model\product_model.dart                                               | Dart       |         51 |         16 |         18 |         85 |
+| e:\new\bekam\lib\data\model\product_model\rating.dart                                                      | Dart       |         21 |         12 |         12 |         45 |
+| e:\new\bekam\lib\data\model\product_model\variation.dart                                                   | Dart       |         42 |         13 |         15 |         70 |
+| e:\new\bekam\lib\data\model\product_model\variation_value.dart                                             | Dart       |         16 |          9 |         10 |         35 |
+| e:\new\bekam\lib\data\model\store_model\store_model.dart                                                   | Dart       |         21 |          0 |          7 |         28 |
+| e:\new\bekam\lib\data\repository\banner_repo.dart                                                          | Dart       |         27 |         16 |          8 |         51 |
+| e:\new\bekam\lib\data\repository\categories.dart                                                           | Dart       |         27 |         17 |          6 |         50 |
+| e:\new\bekam\lib\data\repository\latest_product_repo.dart                                                  | Dart       |         25 |         16 |          8 |         49 |
+| e:\new\bekam\lib\data\repository\popular_product_repo.dart                                                 | Dart       |         26 |         16 |          8 |         50 |
+| e:\new\bekam\lib\data\repository\set_model_repo.dart                                                       | Dart       |         27 |         16 |          8 |         51 |
+| e:\new\bekam\lib\data\web_services\delete.dart                                                             | Dart       |         27 |         12 |          3 |         42 |
+| e:\new\bekam\lib\data\web_services\dio_factory.dart                                                        | Dart       |         25 |         10 |          3 |         38 |
+| e:\new\bekam\lib\data\web_services\get.dart                                                                | Dart       |         31 |         15 |          4 |         50 |
+| e:\new\bekam\lib\data\web_services\http_request.dart                                                       | Dart       |         12 |         10 |          2 |         24 |
+| e:\new\bekam\lib\data\web_services\post.dart                                                               | Dart       |         29 |         13 |          3 |         45 |
+| e:\new\bekam\lib\data\web_services\put.dart                                                                | Dart       |         29 |         13 |          3 |         45 |
+| e:\new\bekam\lib\firebase_options.dart                                                                     | Dart       |         65 |         11 |          7 |         83 |
+| e:\new\bekam\lib\json\Popular items.json                                                                   | JSON       |      1,345 |          0 |          0 |      1,345 |
+| e:\new\bekam\lib\json\banner.json                                                                          | JSON       |         52 |          0 |          0 |         52 |
+| e:\new\bekam\lib\json\banner_details.json                                                                  | JSON       |        172 |          0 |          0 |        172 |
+| e:\new\bekam\lib\json\categories.json                                                                      | JSON       |         93 |          0 |          0 |         93 |
+| e:\new\bekam\lib\json\category_contents.json                                                               | JSON       |        460 |          0 |          0 |        460 |
+| e:\new\bekam\lib\json\latest_products.json                                                                 | JSON       |      1,265 |          0 |          0 |      1,265 |
+| e:\new\bekam\lib\json\null.json                                                                            | JSON       |        380 |          0 |          0 |        380 |
+| e:\new\bekam\lib\json\set_menu.json                                                                        | JSON       |        460 |          0 |          0 |        460 |
+| e:\new\bekam\lib\main.dart                                                                                 | Dart       |         38 |         56 |         13 |        107 |
+| e:\new\bekam\lib\presentation\common_widget\app_bar\appbar_leading_image.dart                              | Dart       |         33 |         13 |          7 |         53 |
+| e:\new\bekam\lib\presentation\common_widget\app_bar\appbar_title.dart                                      | Dart       |         30 |         13 |          7 |         50 |
+| e:\new\bekam\lib\presentation\common_widget\app_bar\appbar_trailing_image.dart                             | Dart       |         31 |         15 |          7 |         53 |
+| e:\new\bekam\lib\presentation\common_widget\app_bar\custom_app_bar.dart                                    | Dart       |         40 |         22 |         12 |         74 |
+| e:\new\bekam\lib\presentation\common_widget\base_button.dart                                               | Dart       |         28 |         24 |         12 |         64 |
+| e:\new\bekam\lib\presentation\common_widget\custom_drop_doen.dart                                          | Dart       |         97 |         39 |         23 |        159 |
+| e:\new\bekam\lib\presentation\common_widget\custom_elevated_button.dart                                    | Dart       |         66 |         23 |          8 |         97 |
+| e:\new\bekam\lib\presentation\common_widget\custom_icon_button.dart                                        | Dart       |         63 |         27 |         15 |        105 |
+| e:\new\bekam\lib\presentation\common_widget\custom_image_view.dart                                         | Dart       |        144 |         19 |         23 |        186 |
+| e:\new\bekam\lib\presentation\common_widget\custom_radio_buton.dart                                        | Dart       |        109 |         37 |         24 |        170 |
+| e:\new\bekam\lib\presentation\common_widget\custom_search_view.dart                                        | Dart       |        161 |         49 |         26 |        236 |
+| e:\new\bekam\lib\presentation\common_widget\custom_text_form_field.dart                                    | Dart       |        112 |         51 |         26 |        189 |
+| e:\new\bekam\lib\presentation\screens\cart\cart_page.dart                                                  | Dart       |         14 |          0 |          4 |         18 |
+| e:\new\bekam\lib\presentation\screens\favourite\favourite_page.dart                                        | Dart       |         14 |          0 |          2 |         16 |
+| e:\new\bekam\lib\presentation\screens\home_nav\home_nav_page.dart                                          | Dart       |         35 |          8 |          4 |         47 |
+| e:\new\bekam\lib\presentation\screens\home_page\home_page.dart                                             | Dart       |         39 |          7 |         12 |         58 |
+| e:\new\bekam\lib\presentation\screens\on_boarding\onboarding.dart                                          | Dart       |         73 |         10 |          7 |         90 |
+| e:\new\bekam\lib\presentation\screens\order\order_page.dart                                                | Dart       |         14 |          0 |          3 |         17 |
+| e:\new\bekam\lib\presentation\screens\register\login\login_page.dart                                       | Dart       |         81 |         15 |          6 |        102 |
+| e:\new\bekam\lib\presentation\screens\register\password_recovery\password_recovery.dart                    | Dart       |         57 |         10 |          6 |         73 |
+| e:\new\bekam\lib\presentation\screens\register\signup\signup_page.dart                                     | Dart       |         75 |         13 |          6 |         94 |
+| e:\new\bekam\lib\presentation\widgets\home_nav\animated_nav_bart\animated_nav_bar.dart                     | Dart       |        138 |         31 |         37 |        206 |
+| e:\new\bekam\lib\presentation\widgets\home_nav\animated_nav_bart\animated_nav_bar_base_btn.dart            | Dart       |        200 |         11 |         14 |        225 |
+| e:\new\bekam\lib\presentation\widgets\home_nav\animated_nav_bart\animated_nav_bar_btn.dart                 | Dart       |        111 |          4 |          6 |        121 |
+| e:\new\bekam\lib\presentation\widgets\home_nav\home_nav_bar.dart                                           | Dart       |         69 |          5 |          5 |         79 |
+| e:\new\bekam\lib\presentation\widgets\home_page\banner\banner_item.dart                                    | Dart       |         25 |          0 |          3 |         28 |
+| e:\new\bekam\lib\presentation\widgets\home_page\banner\home_banner_container.dart                          | Dart       |         64 |          0 |          3 |         67 |
+| e:\new\bekam\lib\presentation\widgets\home_page\base_home_page_container.dart                              | Dart       |         21 |          0 |          3 |         24 |
+| e:\new\bekam\lib\presentation\widgets\home_page\category\category_item.dart                                | Dart       |         70 |          0 |          3 |         73 |
+| e:\new\bekam\lib\presentation\widgets\home_page\category\home_category_container.dart                      | Dart       |         63 |          0 |          3 |         66 |
+| e:\new\bekam\lib\presentation\widgets\home_page\nearby_stores\home_nearby_stores_container.dart            | Dart       |         69 |          0 |          3 |         72 |
+| e:\new\bekam\lib\presentation\widgets\home_page\nearby_stores\store_item.dart                              | Dart       |         94 |          0 |          4 |         98 |
+| e:\new\bekam\lib\presentation\widgets\home_page\popular&latest products\home_latest_product_container.dart | Dart       |         64 |          0 |          3 |         67 |
+| e:\new\bekam\lib\presentation\widgets\home_page\popular&latest products\home_popular_items_container.dart  | Dart       |         64 |          0 |          3 |         67 |
+| e:\new\bekam\lib\presentation\widgets\home_page\popular&latest products\poduct_rate.dart                   | Dart       |         26 |          0 |          3 |         29 |
+| e:\new\bekam\lib\presentation\widgets\home_page\popular&latest products\product_item.dart                  | Dart       |        132 |          0 |          4 |        136 |
+| e:\new\bekam\lib\presentation\widgets\home_page\search\home_page_search_top_bar.dart                       | Dart       |        135 |          0 |          3 |        138 |
+| e:\new\bekam\lib\presentation\widgets\home_page\set_menu\home_set_menu_container.dart                      | Dart       |         63 |          0 |          3 |         66 |
+| e:\new\bekam\lib\presentation\widgets\home_page\set_menu\set_menu_item.dart                                | Dart       |         70 |          0 |          3 |         73 |
+| e:\new\bekam\lib\presentation\widgets\onboarding\onboarding_item.dart                                      | Dart       |         49 |          9 |          5 |         63 |
+| e:\new\bekam\lib\presentation\widgets\register\common\facebook_login_btn.dart                              | Dart       |         27 |         10 |          8 |         45 |
+| e:\new\bekam\lib\presentation\widgets\register\common\google_login_btn.dart                                | Dart       |         27 |         10 |          8 |         45 |
+| e:\new\bekam\lib\presentation\widgets\register\common\or_widget.dart                                       | Dart       |         32 |          5 |          5 |         42 |
+| e:\new\bekam\lib\presentation\widgets\register\login\login_email_text_field.dart                           | Dart       |         21 |          6 |          3 |         30 |
+| e:\new\bekam\lib\presentation\widgets\register\login\login_password_text_field.dart                        | Dart       |         22 |          7 |          3 |         32 |
+| e:\new\bekam\lib\presentation\widgets\register\password_recovery\password_recovery_email_text_field.dart   | Dart       |         27 |          9 |          3 |         39 |
+| e:\new\bekam\lib\presentation\widgets\register\signup\signup_email_text_field.dart                         | Dart       |         21 |          8 |          3 |         32 |
+| e:\new\bekam\lib\presentation\widgets\register\signup\signup_password_text_field.dart                      | Dart       |         22 |          8 |          3 |         33 |
+| e:\new\bekam\lib\select_cheap.dart                                                                         | Dart       |         58 |         22 |         13 |         93 |
+| e:\new\bekam\lib\trial.dart                                                                                | Dart       |         64 |         12 |          7 |         83 |
+| e:\new\bekam\linux\flutter\generated_plugin_registrant.cc                                                  | C++        |          3 |          4 |          5 |         12 |
+| e:\new\bekam\linux\flutter\generated_plugin_registrant.h                                                   | C++        |          5 |          5 |          6 |         16 |
+| e:\new\bekam\linux\flutter\generated_plugins.cmake                                                         | CMake      |         18 |          0 |          6 |         24 |
+| e:\new\bekam\linux\main.cc                                                                                 | C++        |          5 |          0 |          2 |          7 |
+| e:\new\bekam\linux\my_application.cc                                                                       | C++        |         74 |         11 |         20 |        105 |
+| e:\new\bekam\linux\my_application.h                                                                        | C++        |          7 |          7 |          5 |         19 |
+| e:\new\bekam\macos\Flutter\GeneratedPluginRegistrant.swift                                                 | Swift      |         16 |          3 |          4 |         23 |
+| e:\new\bekam\macos\RunnerTests\RunnerTests.swift                                                           | Swift      |          7 |          2 |          4 |         13 |
+| e:\new\bekam\macos\Runner\AppDelegate.swift                                                                | Swift      |          8 |          0 |          2 |         10 |
+| e:\new\bekam\macos\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json                                 | JSON       |         68 |          0 |          1 |         69 |
+| e:\new\bekam\macos\Runner\Base.lproj\MainMenu.xib                                                          | XML        |        343 |          0 |          1 |        344 |
+| e:\new\bekam\macos\Runner\MainFlutterWindow.swift                                                          | Swift      |         12 |          0 |          4 |         16 |
+| e:\new\bekam\macos\firebase_app_id_file.json                                                               | JSON       |          7 |          0 |          0 |          7 |
+| e:\new\bekam\pubspec.yaml                                                                                  | YAML       |         57 |         26 |          8 |         91 |
+| e:\new\bekam\test\widget_test.dart                                                                         | Dart       |         14 |         13 |          8 |         35 |
+| e:\new\bekam\web\index.html                                                                                | HTML       |         38 |         16 |          6 |         60 |
+| e:\new\bekam\web\manifest.json                                                                             | JSON       |         35 |          0 |          0 |         35 |
+| e:\new\bekam\windows\flutter\generated_plugin_registrant.cc                                                | C++        |         12 |          4 |          5 |         21 |
+| e:\new\bekam\windows\flutter\generated_plugin_registrant.h                                                 | C++        |          5 |          5 |          6 |         16 |
+| e:\new\bekam\windows\flutter\generated_plugins.cmake                                                       | CMake      |         21 |          0 |          6 |         27 |
+| e:\new\bekam\windows\runner\flutter_window.cpp                                                             | C++        |         48 |          4 |         15 |         67 |
+| e:\new\bekam\windows\runner\flutter_window.h                                                               | C++        |         20 |          5 |          9 |         34 |
+| e:\new\bekam\windows\runner\main.cpp                                                                       | C++        |         30 |          4 |         10 |         44 |
+| e:\new\bekam\windows\runner\resource.h                                                                     | C++        |          9 |          6 |          2 |         17 |
+| e:\new\bekam\windows\runner\utils.cpp                                                                      | C++        |         54 |          2 |         10 |         66 |
+| e:\new\bekam\windows\runner\utils.h                                                                        | C++        |          8 |          6 |          6 |         20 |
+| e:\new\bekam\windows\runner\win32_window.cpp                                                               | C++        |        210 |         24 |         55 |        289 |
+| e:\new\bekam\windows\runner\win32_window.h                                                                 | C++        |         48 |         31 |         24 |        103 |
+| Total                                                                                                      |            |     18,247 |      2,146 |      2,209 |     22,602 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

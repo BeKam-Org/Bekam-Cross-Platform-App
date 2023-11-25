@@ -1,9 +1,11 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
 // 🌎 Project imports:
 import 'package:bekam/core/helper/localization_extension.dart';
 import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/presentation/common_widget/custom_elevated_button.dart';
 import 'package:bekam/presentation/common_widget/custom_image_view.dart';
-import 'package:flutter/material.dart';
 
 /// [GoogleLoginButton] is a StatelessWidget representing a custom button for Google login.
 class GoogleLoginButton extends StatelessWidget {

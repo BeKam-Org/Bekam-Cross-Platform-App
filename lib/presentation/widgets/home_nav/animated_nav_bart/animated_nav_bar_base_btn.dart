@@ -1,7 +1,11 @@
+// 🎯 Dart imports:
 import 'dart:math' show pow;
 
-import 'package:bekam/presentation/widgets/home_nav/animated_nav_bart/animated_nav_bar.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+
+// 🌎 Project imports:
+import 'package:bekam/presentation/widgets/home_nav/animated_nav_bart/animated_nav_bar.dart';
 
 /// The [AnimatedNavBarBaseButton] is a StatefulWidget that represents a customizable
 /// button used in the [AnimatedNavBar]. It supports icon, text, and various styling

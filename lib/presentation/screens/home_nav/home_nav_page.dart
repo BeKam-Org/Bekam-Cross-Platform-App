@@ -1,7 +1,12 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
+// 📦 Package imports:
 import 'package:auto_route/auto_route.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/router/auto_router.gr.dart';
 import 'package:bekam/presentation/widgets/home_nav/home_nav_bar.dart';
-import 'package:flutter/material.dart';
 
 @RoutePage()
 class HomeNavPage extends StatefulWidget {

@@ -1,5 +1,4 @@
 // 🐦 Flutter imports:
-import 'package:bekam/core/helper/share_prefs_helper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 // 🌎 Project imports:
 import 'package:bekam/core/bloc_observer/bloc_observer.dart';
 import 'package:bekam/core/di/get_initializer.dart';
+import 'package:bekam/core/helper/share_prefs_helper.dart';
 import 'package:bekam/firebase_options.dart';
 import 'package:bekam/select_cheap.dart';
 

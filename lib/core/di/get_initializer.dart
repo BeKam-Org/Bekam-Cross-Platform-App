@@ -1,17 +1,17 @@
 // 📦 Package imports:
-import 'package:bekam/core/helper/share_prefs_helper.dart';
-import 'package:bekam/core/router/auto_router.dart';
-import 'package:bekam/data/business_logic/theme/theme_cubit.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
 // 🌎 Project imports:
+import 'package:bekam/core/helper/share_prefs_helper.dart';
 import 'package:bekam/core/networking/dio.dart';
+import 'package:bekam/core/router/auto_router.dart';
 import 'package:bekam/data/business_logic/banner/banner_get_cubit.dart';
 import 'package:bekam/data/business_logic/category/category_get_cubit.dart';
 import 'package:bekam/data/business_logic/latest_product/latest_product_get_cubit.dart';
 import 'package:bekam/data/business_logic/popular_product/popular_product_get.dart';
 import 'package:bekam/data/business_logic/set_menu/set_menu_get_cubit.dart';
+import 'package:bekam/data/business_logic/theme/theme_cubit.dart';
 import 'package:bekam/data/repository/banner_repo.dart';
 import 'package:bekam/data/repository/categories.dart';
 import 'package:bekam/data/repository/latest_product_repo.dart';

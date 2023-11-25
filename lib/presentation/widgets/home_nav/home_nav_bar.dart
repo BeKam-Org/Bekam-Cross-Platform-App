@@ -1,10 +1,14 @@
-// 🌎 Project imports:
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
+// 📦 Package imports:
 import 'package:auto_route/auto_route.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+// 🌎 Project imports:
 import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/presentation/widgets/home_nav/animated_nav_bart/animated_nav_bar.dart';
 import 'package:bekam/presentation/widgets/home_nav/animated_nav_bart/animated_nav_bar_btn.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 /// The [HomeNavBar] is a StatelessWidget that represents a custom navigation bar
 /// designed for a home screen. It includes [AnimatedNavBar] with four tabs:

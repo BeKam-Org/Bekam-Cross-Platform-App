@@ -1,7 +1,9 @@
+// 🐦 Flutter imports:
+import 'package:flutter/material.dart';
+
 // 🌎 Project imports:
 import 'package:bekam/core/helper/localization_extension.dart';
 import 'package:bekam/presentation/common_widget/custom_text_form_field.dart';
-import 'package:flutter/material.dart';
 
 /// [SignupPasswordTextField] is a StatelessWidget representing a custom password
 /// input field used for user registration (signup).

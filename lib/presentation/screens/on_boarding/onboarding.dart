@@ -1,5 +1,4 @@
 // 🐦 Flutter imports:
-import 'package:bekam/core/router/auto_router.gr.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
@@ -8,6 +7,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 // 🌎 Project imports:
 import 'package:bekam/core/helper/localization_extension.dart';
+import 'package:bekam/core/router/auto_router.gr.dart';
 import 'package:bekam/core/utils/values.dart';
 import 'package:bekam/data/business_logic/onboarding/onboarding_vm.dart';
 import 'package:bekam/data/model/onboarding_model/onboarding_model.dart';

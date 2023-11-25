@@ -8,21 +8,26 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+
+// 📦 Package imports:
 import 'package:auto_route/auto_route.dart' as _i11;
+
+// 🌎 Project imports:
 import 'package:bekam/presentation/screens/cart/cart_page.dart' as _i1;
-import 'package:bekam/presentation/screens/favourite/favourite_page.dart'
-    as _i2;
 import 'package:bekam/presentation/screens/home_nav/home_nav_page.dart' as _i3;
 import 'package:bekam/presentation/screens/home_page/home_page.dart' as _i4;
 import 'package:bekam/presentation/screens/on_boarding/onboarding.dart' as _i6;
 import 'package:bekam/presentation/screens/order/order_page.dart' as _i7;
+import 'package:bekam/trial.dart' as _i10;
+
+import 'package:bekam/presentation/screens/favourite/favourite_page.dart'
+    as _i2;
 import 'package:bekam/presentation/screens/register/login/login_page.dart'
     as _i5;
 import 'package:bekam/presentation/screens/register/password_recovery/password_recovery.dart'
     as _i8;
 import 'package:bekam/presentation/screens/register/signup/signup_page.dart'
     as _i9;
-import 'package:bekam/trial.dart' as _i10;
 
 abstract class $AppRouter extends _i11.RootStackRouter {
   $AppRouter({super.navigatorKey});

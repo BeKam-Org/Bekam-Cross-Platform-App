@@ -1,9 +1,11 @@
 // 🐦 Flutter imports:
-import 'package:bekam/core/helper/share_prefs_helper.dart';
 import 'package:flutter/material.dart';
 
 // 📦 Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+// 🌎 Project imports:
+import 'package:bekam/core/helper/share_prefs_helper.dart';
 
 part 'theme_state.dart';
 
