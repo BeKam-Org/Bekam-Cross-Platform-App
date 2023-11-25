@@ -34,17 +34,16 @@ class SignUpPage extends StatelessWidget {
             width: double.maxFinite,
             padding: EdgeInsets.symmetric(
               horizontal: 35.myWidth,
-              vertical: 58.myHeight,
+              vertical: 0.myHeight,
             ),
             child: Column(
               children: [
                 // Displaying the app logo using CustomImageView
                 CustomImageView(
-                  imagePath: GlobalAppImages.appLogo,
-                  height: 160.myHeight,
-                  width: 177.myWidth,
+                  imagePath: GlobalAppSVG.appLogo,
+                  height: (160 * 1.5).myHeight,
+                  width: (177 * 21.5).myWidth,
                 ),
-                SizedBox(height: 17.myHeight),
                 // Displaying the greeting for creating an account
                 Text(
                   "msg_hello_create_account".tr(context),

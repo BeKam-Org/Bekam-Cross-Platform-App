@@ -31,17 +31,17 @@ class PasswordRecoveryPage extends StatelessWidget {
             width: double.maxFinite,
             padding: EdgeInsets.symmetric(
               horizontal: 35.myWidth,
-              vertical: 58.myHeight,
+              vertical: 0.myHeight,
             ),
             child: Column(
               children: [
                 // Displaying the app logo using CustomImageView
                 CustomImageView(
-                  imagePath: GlobalAppImages.appLogo,
-                  height: 160.myHeight,
-                  width: 177.myWidth,
+                  imagePath: GlobalAppSVG.appLogo,
+                  height: (160 * 1.5).myHeight,
+                  width: (177 * 21.5).myWidth,
                 ),
-                SizedBox(height: 54.myHeight),
+                SizedBox(height: 20.myHeight),
                 // Displaying the password recovery title
                 Text(
                   "msg_password_recovery".tr(context),

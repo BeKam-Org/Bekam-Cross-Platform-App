@@ -33,19 +33,15 @@ class LoginPage extends StatelessWidget {
           child: Container(
             width: double.maxFinite,
             padding: EdgeInsets.symmetric(
-                horizontal: 35.myWidth, vertical: 42.myHeight),
+                horizontal: 35 * 0.75.myWidth, vertical: 0.myHeight),
             child: Column(
               children: [
-                SizedBox(
-                  height: 16.myHeight,
-                ),
                 // Displaying the app logo using CustomImageView
                 CustomImageView(
-                  imagePath: GlobalAppImages.appLogo,
-                  height: 160.myHeight,
-                  width: 177.myWidth,
+                  imagePath: GlobalAppSVG.appLogo,
+                  height: (160 * 1.5).myHeight,
+                  width: (177 * 21.5).myWidth,
                 ),
-                SizedBox(height: 47.myHeight),
                 // Displaying the welcome message
                 Text(
                   "lbl_welcome_back".tr(context),
